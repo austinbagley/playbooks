@@ -39,7 +39,6 @@ hr.left-nav-line {
     display: block;
     margin: 10px 0;
     color: white;
-
 }
 
 .playbook-table-of-contents a.indent {
@@ -74,7 +73,6 @@ hr.left-nav-line {
 .inline-hero img {
     margin: 10px auto;
 }
-
 
 .inline-img img {
     float:right;
@@ -160,7 +158,6 @@ hr.left-nav-line {
     font-size: 20px;
     letter-spacing: 2px;
 }
-
 
 .playbook-callout-box .box-content {
     width:100%;
