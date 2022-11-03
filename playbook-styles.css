@@ -78,7 +78,12 @@ hr.left-nav-line {
 
 .inline-img img {
     float:right;
-    margin: 5px;
+    margin: 15px;
+}
+
+.inline-img-left img {
+    float:left;
+    margin: 15px;
 }
 
 .playbook-icon-list-item {
