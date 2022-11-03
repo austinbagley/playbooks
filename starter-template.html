@@ -6,229 +6,221 @@
     </head>
 
     <body>
+        
         <!-- this stylesheet is required for the playbook to look right, hence being in the body -->
-
         <link rel="stylesheet" href="playbook-styles.css" type="text/css">
 
+        <!-- this came from blog html...for some reason we need it to make background white -->
+        <div class="site-wrap">
 
-        <div class="site-wrap at-element-marker">
-            <div class="nav-context">
+            <!-- Left Nav -->
+            <div id="left-nav" class="playbook-nav">
+                <div class="playbook-nav-logo">
+                    <img width="180" src="images/pmk-flowacademy-logo-marklight.webp">
+                </div>
+                <hr class="left-nav-line">
+                <div class="playbook-table-of-contents">
 
-                <!-- Left Nav -->
+                    <!-- you'll need to manually add in the sections and relelave div-id's to make the anchor links work -->
+                    <a href="#insert-div-id-here">Section 1</a>
+                    <a href="#insert-div-id-here">Section 2</a>
+                    <a href="#insert-div-id-here">Section 3</a>
+                    <a href="#insert-div-id-here">Section 4</a>
+                    <a href="#insert-div-id-here">Section 5</a>
+                    <a href="#insert-div-id-here" class="indent">Indented Sub-section 1</a>
+                    <a href="#insert-div-id-here" class="indent">Indented Sub-section 1</a>
+                    <a href="#insert-div-id-here" class="indent">Indented Sub-section 1</a>
+                    <a href="#insert-div-id-here">Section 6</a>
+                    <a href="#insert-div-id-here">Section 7</a>
+                </div>
+                <hr class="left-nav-line">
+                <div class="playbook-table-of-contents">
+                    <a href="#">Appendix</a>
+                </div>
+                <hr class="left-nav-line">
+                <div class="playbook-nav-logo">
+                    <img width="160" src="images/ps-logo.webp">
+                </div>
+            </div>
 
-                <div id="left-nav" class="playbook-nav">
-                    <div class="playbook-nav-logo">
-                        <img width="180" src="images/pmk-flowacademy-logo-marklight.webp">
+            <!-- Main Content -->
+            <div id="content" class="playbook-content" role="main">
+
+                <!-- this is the main hero for the page -->
+                <div class="playbook-hero" style="background-image:
+                    url('images/hero-1.webp');">
+                    <div class="hub-hero-content-backing clearfix"></div>
+                    <div class="row column-control--wide">
+                        <div class="large-12 columns
+                            hub-hero-content-wrapper">
+                            <div class="hub-hero-breadcrumbs">
+                                <a href="/blog">Flow Academy</a> &gt; <a
+                                    href="/blog">Playbooks</a>
+                            </div>
+
+                            <h1 class="resource-title playbook-title">Title goes here</h1>
+                        </div>
                     </div>
-                    <hr class="left-nav-line">
-                    <div class="playbook-table-of-contents">
-
-                        <!-- you'll need to manually add in the sections and relelave div-id's to make the anchor links work -->
-
-                        <a href="#insert-div-id-here">Section 1</a>
-                        <a href="#insert-div-id-here">Section 2</a>
-                        <a href="#insert-div-id-here">Section 3</a>
-                        <a href="#insert-div-id-here">Section 4</a>
-                        <a href="#insert-div-id-here">Section 5</a>
-                        <a href="#insert-div-id-here" class="indent">Indented Sub-section 1</a>
-                        <a href="#insert-div-id-here" class="indent">Indented Sub-section 1</a>
-                        <a href="#insert-div-id-here" class="indent">Indented Sub-section 1</a>
-                        <a href="#insert-div-id-here">Section 6</a>
-                        <a href="#insert-div-id-here">Section 7</a>
-                    </div>
-                    <hr class="left-nav-line">
-                    <div class="playbook-table-of-contents">
-                        <a href="#">Appendix</a>
-                    </div>
-                    <hr class="left-nav-line">
-                    <div class="playbook-nav-logo">
-                        <img width="160" src="images/ps-logo.webp">
-                    </div>
+                    <div class="hub-hero-bottom-mask clearfix"></div>
                 </div>
 
-                <!-- Main Content -->
+                <!-- where the playbook content begins -->
+                <div class="row column-control--wide playbook-body">
 
-                <div id="content" class="playbook-content" role="main">
-                    <div class="playbook-hero" style="background-image:
-                        url('images/hero-1.webp');">
-                        <div class="hub-hero-content-backing clearfix"></div>
-                        <div class="row column-control--wide">
-                            <div class="large-12 columns
-                                hub-hero-content-wrapper">
-                                <div class="hub-hero-breadcrumbs">
-                                    <a href="/blog">Flow Academy</a> &gt; <a
-                                        href="/blog">Playbooks</a>
+                    <!-- playbook section, give it a custom id and reference it in the table of contents left-nav -->
+                    <div id="intro" class="playbook-section">
+                        <h3>This is a section header</h3>
+                        <p>
+                            This is a text paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                            est laborum.
+                        </p>
+                    </div>
+
+                    <!-- blockquote / callout -->
+                    <div class="callout-wrapper">
+                        <div class="gradient callout-left"></div>
+                        <div class="callout-right"><h4>This is a callout / blockquote. </h4></div>
+                    </div>
+
+                    <!-- list with icon/image and text with a button -->
+                    <div class="playbook-icon-list">
+                        <div class="playbook-icon-list-item">
+                            <div class="playbook-icon-list-icon">
+                                <img width="160" height="160" src="images/cycle-time.webp">
+                            </div>
+                            <div class="playbook-icon-list-copy">
+                                <p>This is a list item</p>
+                                <div data-emptytext="Button" class="psbutton--left">
+                                    <div>
+                                        <a href="#" target="_self" style=" " class="button button--flow-gradient"
+                                            data-aa-title="learn-more-cycle-time">
+                                            Button CTA
+                                        </a>
+                                    </div>
                                 </div>
-
-                                <h1 class="resource-title playbook-title">Title goes here</h1>
                             </div>
                         </div>
-                        <div class="hub-hero-bottom-mask clearfix"></div>
-                    </div>
-                    <div class="row column-control--wide playbook-body"><div
-                            class="large-12 columns hub-content">
-                            <div class="contain mainpage"><div class="text-rte text section">
-
-                                <!-- playbook section, give it a custom id and reference it in the table of contents left-nav -->
-                                
-                                <div id="intro" class="playbook-section">
-                                    <h3>This is a section header</h3>
-                                    <p>
-                                        This is a text paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                        est laborum.
-                                    </p>
-                                </div>
-
-                                <!-- blockquote / callout -->
-
-                                <div class="callout-wrapper">
-                                    <div class="gradient callout-left"></div>
-                                    <div class="callout-right"><h4>This is a callout / blockquote. </h4></div>
-                                </div>
-
-                                <!-- list with icon/image and text with a button -->  
-
-                                <div class="playbook-icon-list">
-                                    <div class="playbook-icon-list-item">
-                                        <div class="playbook-icon-list-icon">
-                                            <img width="160" height="160" src="images/cycle-time.webp">
-                                        </div>
-                                        <div class="playbook-icon-list-copy">
-                                            <p>This is a list item</p>
-                                            <div data-emptytext="Button" class="psbutton--left">
-                                                <div>
-                                                    <a href="#" target="_self" style=" " class="button button--flow-gradient" data-aa-title="learn-more-cycle-time">
-                                                        Button CTA
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playbook-icon-list-item">
-                                        <div class="playbook-icon-list-icon">
-                                            <img width="160" height="160" src="images/reports.webp">
-                                        </div>
-                                        <div class="playbook-icon-list-copy">
-                                            <p>This is another list item</p>
-                                            <div data-emptytext="Button" class="psbutton--left">
-                                                <div>
-                                                    <a href="#" target="_self" style=" " class="button button--flow-gradient"
-                                                        data-aa-title="learn-more-cycle-time">
-                                                        Button CTA
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div> 
-                                </div>
-
-                                <!-- section header with a hero image and an unordered list-->
-                                                             
-                                <div id="step1" class="playbook-section">
-                                    <div class="inline-hero">
-                                        <img src="images/step1.webp">
-                                    </div>
-                                    <strong>STEP 1</strong>
-                                    <h3>Section header with an image</h3>
-                                    <h4>h4 header</h4>
-                                    <p>
-                                        This is a text paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                    est laborum.
-                                    </p>
-                                    <h4>another h4 header</h4>
-                                    <p>
-                                        Intro to list:
-                                        <ul>
-                                            <li>
-                                                Item 1
-                                            </li>
-                                            <li>
-                                                Item 2
-                                            </li>
-                                            <li>
-                                                Item 3
-                                            </li>
-                                        </ul>
-                                    </p>
-                                    <p></p>
-                                    <p></p>
-                                </div>
-
-                                <!-- ordered list with fancy numbers -->
-
-                                <div class="playbook-ordered-list">
-                                    <div class="playbook-ordered-list-item">
-                                        <div>
-                                            <img width="32" height="70" src="images/1.webp">
-                                        </div>
-                                        <div class="playbook-ordered-list-item-copy">
-                                            <p>Data will allow us to advocate for and operate better as a team—it’s not for analyzing individual
-                                                performance.</p>
-                                        </div>
-                                    </div>
-                                    <div class="playbook-ordered-list-item">
-                                        <div>
-                                            <img width="48" height="70" src="images/2.webp">
-                                        </div>
-                                        <div class="playbook-ordered-list-item-copy">
-                                            <p>Data should augment the qualitative conversations in a retrospective, not replace them.</p>
-                                        </div>
+                        <div class="playbook-icon-list-item">
+                            <div class="playbook-icon-list-icon">
+                                <img width="160" height="160" src="images/reports.webp">
+                            </div>
+                            <div class="playbook-icon-list-copy">
+                                <p>This is another list item</p>
+                                <div data-emptytext="Button" class="psbutton--left">
+                                    <div>
+                                        <a href="#" target="_self" style=" " class="button button--flow-gradient"
+                                            data-aa-title="learn-more-cycle-time">
+                                            Button CTA
+                                        </a>
                                     </div>
                                 </div>
-                                    
-                                <!-- callout box -->
-                                        
-                                <div class="playbook-callout-box">
-                                    <div class="box-header">
-                                        <strong>QUICK FLOW TIP</strong>
-                                    </div>
-                                    <div class="box-content">
-                                        <p>This conversation doesn’t need to feel like a dry, repetitive meeting. Here are some suggestions to add
-                                            levity into your retrospective:
-                                            <ul>
-                                                <li>
-                                                    Have engineers take turns leading the meeting
-                                                </li>
-                                                <li>
-                                                    Start the meeting with an icebreaker, especially if there are new team members
-                                                </li>
-                                                <li>
-                                                    Include metaphors from your team’s favorite games, movies, or TV shows
-                                                </li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                </div>
-                            
-                                <!-- image in paragraph -->
-                                       
-                                <div class="inline-img">
-                                    <img width="400" height="267" src="images/ticket-1.webp">
-                                </div>
-                                <h4 id="ticket-analysis">Paragraph with wrapped image </h4>
-                                <p>
-                                    Start with the ticket-by-ticket analysis by going to Ticket Log. Click on cycle time to sort your tickets by
-                                    longest cycle time. Set the time period to the last two weeks—these point to your recent hotspots. Ask
 
-                                    your team, “What happened here?” Remember to ask with curiosity, not blame. Then ask, “What actions should
-                                    we take to make sure cycle time isn’t that slow?”
-                                </p>
-                                <p>
-                                    Next, click cycle time again to re-sort the table and view the fastest tickets. Some of these tickets might be
-                                    basic maintenance (fast by nature). Ignore these and focus on cycle times that are less than a day—these are
-                                    your recent accelerators. Discuss with your team the root cause of the fast cycle times. Is that cause scalable
-                                    across other tickets?
-                                </p>    
                             </div>
                         </div>
                     </div>
+
+                    <!-- section header with a hero image and an unordered list-->
+                    <div id="step1" class="playbook-section">
+                        <div class="inline-hero">
+                            <img src="images/step1.webp">
+                        </div>
+                        <strong>STEP 1</strong>
+                        <h3>Section header with an image</h3>
+                        <h4>h4 header</h4>
+                        <p>
+                            This is a text paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                            est laborum.
+                        </p>
+                        <h4>another h4 header</h4>
+                        <p>
+                            Intro to list:
+                            <ul>
+                                <li>
+                                    Item 1
+                                </li>
+                                <li>
+                                    Item 2
+                                </li>
+                                <li>
+                                    Item 3
+                                </li>
+                            </ul>
+                        </p>
+                        <p></p>
+                        <p></p>
+                    </div>
+
+                    <!-- ordered list with fancy numbers -->
+                    <div class="playbook-ordered-list">
+                        <div class="playbook-ordered-list-item">
+                            <div>
+                                <img width="32" height="70" src="images/1.webp">
+                            </div>
+                            <div class="playbook-ordered-list-item-copy">
+                                <p>Data will allow us to advocate for and operate better as a team—it’s not for analyzing individual
+                                    performance.</p>
+                            </div>
+                        </div>
+                        <div class="playbook-ordered-list-item">
+                            <div>
+                                <img width="48" height="70" src="images/2.webp">
+                            </div>
+                            <div class="playbook-ordered-list-item-copy">
+                                <p>Data should augment the qualitative conversations in a retrospective, not replace them.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- callout box -->
+                    <div class="playbook-callout-box">
+                        <div class="box-header">
+                            <strong>QUICK FLOW TIP</strong>
+                        </div>
+                        <div class="box-content">
+                            <p>This conversation doesn’t need to feel like a dry, repetitive meeting. Here are some suggestions to add
+                                levity into your retrospective:
+                                <ul>
+                                    <li>
+                                        Have engineers take turns leading the meeting
+                                    </li>
+                                    <li>
+                                        Start the meeting with an icebreaker, especially if there are new team members
+                                    </li>
+                                    <li>
+                                        Include metaphors from your team’s favorite games, movies, or TV shows
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- image in paragraph -->
+                    <div id="image-in-paragraph">
+                        <div class="inline-img">
+                            <img width="400" height="267" src="images/ticket-1.webp">
+                        </div>
+                        <h4 id="ticket-analysis">Paragraph with wrapped image </h4>
+                        <p>
+                            Start with the ticket-by-ticket analysis by going to Ticket Log. Click on cycle time to sort your tickets by
+                            longest cycle time. Set the time period to the last two weeks—these point to your recent hotspots. Ask
+
+                            your team, “What happened here?” Remember to ask with curiosity, not blame. Then ask, “What actions should
+                            we take to make sure cycle time isn’t that slow?”
+                        </p>
+                        <p>
+                            Next, click cycle time again to re-sort the table and view the fastest tickets. Some of these tickets might be
+                            basic maintenance (fast by nature). Ignore these and focus on cycle times that are less than a day—these are
+                            your recent accelerators. Discuss with your team the root cause of the fast cycle times. Is that cause scalable
+                            across other tickets?
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>
