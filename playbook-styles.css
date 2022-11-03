@@ -46,8 +46,6 @@ hr.left-nav-line {
     padding-left: 30px;
 }
 
-
-
 .playbook-hero {
     background-color: beige;
     background-repeat: no-repeat;
@@ -69,29 +67,18 @@ hr.left-nav-line {
     margin-top: 40px;
 }
 
-.inline-hero img {
-    margin: 10px 0;
+.inline-hero {
+    text-align: center;
 }
+
+.inline-hero img {
+    margin: 10px auto;
+}
+
 
 .inline-img img {
     float:right;
     margin: 5px;
-}
-
-.callout-wrapper {
-    display: flex;
-  
-    padding-left:15%;
-    margin-bottom: 20px;
-}
-
-.callout-left {
-    width:6px;
-}
-
-.callout-right {
-    width:60%;
-    padding-left: 15px;
 }
 
 .playbook-icon-list-item {
@@ -124,6 +111,34 @@ hr.left-nav-line {
     font-size: 20px;
 }
 
+/* Callouts and Blockquotes */
+
+.callout-wrapper {
+    display: flex;
+    padding-left:15%;
+    margin-bottom: 20px;
+}
+
+.callout-left {
+    width:6px;
+}
+
+.callout-right {
+    width:70%;
+    padding-left: 15px;
+}
+
+.gradient { 
+    transform: rotate(0deg); 
+    width: 5px; 
+    transform-origin: center center; 
+    opacity: 1; pointer-events: auto; 
+    cursor: inherit; border-width: 0px; 
+    background-color: transparent; 
+    background-image: linear-gradient(0deg, rgb(39, 170, 225) 0%, rgb(41, 104, 178) 100%); 
+    box-shadow: none; transition-property: none; 
+}
+
 .playbook-callout-box {
     display: block;
     border: 1px solid rgb(39, 170, 225);
@@ -147,15 +162,3 @@ hr.left-nav-line {
     padding: 20px;
 }
 
-.gradient { 
-    transform: rotate(0deg); 
-    width: 5px; 
-    height: 80px; 
-    transform-origin: center center; 
-    opacity: 1; pointer-events: auto; 
-    cursor: inherit; border-width: 0px; 
-    background-color: transparent; 
-    background-image: linear-gradient(0deg, rgb(39, 170, 225) 0%, rgb(41, 104, 178) 100%); 
-    box-shadow: none; transition-property: none; 
-    /*z-index: 384;*/
-}
