@@ -1,0 +1,629 @@
+<html>
+    <head>
+        <script type="text/javascript" async="async"
+            src="https://somni.https://www.pluralsight.com/b/ss/pluralsight.united.dev/10/JS-2.22.4-LCXS/s91405816361990?AQB=1&amp;ndh=1&amp;pf=1&amp;callback=s_c_il[1].doPostbacks&amp;et=1&amp;t=2%2F10%2F2022%2011%3A15%3A15%203%20360&amp;d.&amp;nsid=0&amp;jsonv=1&amp;.d&amp;mid=62107265039245940731011361827125023843&amp;aamlh=9&amp;ce=UTF-8&amp;pageName=https%3A%2F%2Fwww.pluralsight.com%2Fblog%2Fsoftware-development%2Freact-bootstrap-explained&amp;g=https%3A%2F%2Fwww.pluralsight.com%2Fblog%2Fsoftware-development%2Freact-bootstrap-explained&amp;v36=N%2FA&amp;v37=N%2FA%7CN%2FA%7CN%2FA%7CN%2FA%7CN%2FA%7CN%2FA%7CN%2FA%7CN%2FA%7CN%2FA%7CN%2FA%7CN%2FA%7CN%2FA%7CN%2FA%7CN%2FA%7CN%2FA&amp;v38=N%2FA&amp;v39=N%2FA&amp;v59=N%2FA&amp;v190=N%2FA&amp;v191=N%2FA&amp;v192=N%2FA&amp;v193=empty&amp;v194=N%2FA&amp;pe=lnk_o&amp;pev2=dnb_vi&amp;s=2560x1440&amp;c=24&amp;j=1.6&amp;v=N&amp;k=Y&amp;bw=2205&amp;bh=1247&amp;mcorgid=70D658CC558978FF7F000101%40AdobeOrg&amp;AQE=1">
+        </script>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="playbook-styles.css" type="text/css">
+        
+    </head>
+    <body class="mode-disabled hub-page font-loading">
+        <script class="at-element-marker">
+            let _ps_migration = {
+              // showConsole control whether messages and logs are output to the browser console
+              showConsole: true,
+              // setGlobal sets whether we want to log items under the _ps_migration object, _ps_migration.log will show each replacement if this is set to truthy 
+              setGlobal: true,
+              log: {},
+              // addConsole is just a wrapper for console.log that also checks the settings above
+              addConsole(message) {
+                if(this.showConsole) {
+                  //console.log(message);
+                }
+              },
+              // addGlobal drops the latest element information into the _ps_migration.log object for easy viewing or detection later
+              addGlobal(cleanedEl) {
+                if(this.setGlobal) {
+                  let len = Object.keys(_ps_migration.log).length;
+          
+                  _ps_migration.log[len] = { cleanedEl };
+                }
+              },
+              // the main function of the script, finds a replaces elements with jQuery
+              // tag: string - the html tag being targeted (ex: 'img')
+              // attribute: string - attribute of the tag that will hold the reference or URL to update (ex: 'src' for img, 'href' for links, etc);
+              // oldRef: string - the old path we're searching and replacing, the old clientlibs directory
+              // newRef: string - the replacement path to new clientlibs directory
+              cleanElementsWithReference(tag, attribute, oldRef, newRef) {
+                this.addConsole('MIGRATING ' + tag);
+                jQuery(tag + '[' + attribute + '*="' + oldRef + '"]').each(function() {
+                  let attrIn = jQuery(this).attr(attribute);
+                  let attrOut = attrIn.replace(oldRef, newRef);
+                  _ps_migration.addConsole('HEADS UP MIGRATION: Replacing ' + tag + ' reference to ' + attrIn + ' with a reference to ' + attrOut);
+                  jQuery(this).attr(attribute, attrOut);
+                  if(_ps_migration.setGlobal) {
+                    let logObj = {
+                      'tag': tag,
+                      'replaced': attrIn,
+                      'replacedWith': attrOut
+                    }
+                    _ps_migration.addGlobal(logObj);
+                  }
+                });
+              },
+              // just a kickoff function for running and logging the execution
+              runClientLibClean() {
+                this.cleanElementsWithReference('img', 'src', '/etc/clientlibs/pluralsight/main/', '/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/');
+                this.cleanElementsWithReference('script', 'src', '/etc/clientlibs/pluralsight/main/', '/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/');
+                this.cleanElementsWithReference('link', 'href', '/etc/clientlibs/pluralsight/main/', '/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/');
+          
+                this.addConsole('MIGRATION SCRIPT RAN');
+              },
+              // broke this out to just log that timeout is running this round, can be handy for troubleshooting
+              runTimeoutClientLibClean() {
+                _ps_migration.addConsole('RUNNING VIA TIMEOUT');
+                _ps_migration.runClientLibClean();
+              },
+              init() {
+                this.addConsole('MIGRATION SCRIPT KICKED OFF');
+                // could probably run checks for adobe and Target here, but we're loading through Target, so seems like overkill
+                document.addEventListener(adobe.target.event.CONTENT_RENDERING_SUCCEEDED, () => {
+                  this.runClientLibClean();
+                });
+          
+                // dirty to make sure we run at least once
+                setTimeout(this.runTimeoutClientLibClean, 500);
+              },
+            };
+          
+            _ps_migration.init();
+        </script>
+        <div id="mktoStyleLoaded" style="display: none; border-top-color:
+            rgb(18, 52, 86);"></div>
+
+        <div class="site-wrap at-element-marker">
+            <div class="nav-context">
+                <div id="left-nav" class="playbook-nav">
+                    <div class="playbook-nav-logo">
+                        <img width="180" src="images/pmk-flowacademy-logo-marklight.webp">
+                    </div>
+                    <hr class="left-nav-line">
+                    <div class="playbook-table-of-contents">
+                        <a href="#intro">Intro</a>
+                        <a href="#prerequisites">Prerequisites</a>
+                        <a href="#step1">Retrospective Prep</a>
+                        <a href="#step2">Set the Tone</a>
+                        <a href="#step3">Dive into Specifics</a>
+                        <a href="#ticket-analysis" class="indent">Ticket Analysis</a>
+                        <a href="#" class="indent">Trend Analysis</a>
+                        <a href="#" class="indent">Process Analysis</a>
+                        <a href="#">Set Action Items</a>
+                        <a href="#">Continuous Improvement</a>
+                    </div>
+                    <hr class="left-nav-line">
+                    <div class="playbook-table-of-contents">
+                        <a href="#">Appendix</a>
+                    </div>
+                    <hr class="left-nav-line">
+                    <div class="playbook-nav-logo">
+                        <img width="160" src="images/ps-logo.webp">
+                    </div>
+                </div>
+                <div id="content" class="playbook-content" role="main">
+                    <div class="playbook-hero" style="background-image:
+                        url('images/hero-1.webp');">
+                        <div class="hub-hero-content-backing clearfix"></div>
+                        <div class="row column-control--wide">
+                            <div class="large-12 columns
+                                hub-hero-content-wrapper">
+                                <div class="hub-hero-breadcrumbs">
+                                    <a href="/blog">Flow Academy</a>&gt;<a
+                                        href="/blog">Playbooks</a>
+                                </div>
+
+                                <h1 class="resource-title playbook-title">How to
+                                    increase software delivery speeds by
+                                    reducing cycle time</h1>
+
+                            </div>
+                        </div>
+                        <div class="hub-hero-bottom-mask clearfix"></div>
+                    </div>
+                    <div class="row column-control--wide playbook-body"><div
+                            class="large-12 columns hub-content">
+                            <div class="contain mainpage"><div class="text-rte
+                                    text section">
+                                    <div id="text-rte-97e5e244fd"
+                                        class="cmp-text">
+                                        <div id="intro" class="playbook-section">
+                                            <h3>Intro</h3>
+                                            <p>
+                                                In this playbook, we’ll dive into how to reduce cycle time so you can speed up development, knock down more of
+                                                your
+                                                roadmap, and better compete in your market.
+                                            </p>
+                                            <p>As we’ve worked with hundreds of
+                                                engineering teams, we’ve found
+                                                repeatable methods to improve
+                                                engineering practices, remove
+                                                roadblocks, and enhance the
+                                                developer experience.</p>
+
+                                            <div class="callout-wrapper">
+                                                <div class="gradient callout-left"></div>
+                                                <div class="callout-right"><h4>The
+                                                        average cycle time reduction
+                                                        is an impressive 35%.</h4></div>
+                                            </div>
+
+                                            <p>The average cycle time reduction is
+                                                an impressive 35%. The key?
+                                                Objective data balanced with
+                                                qualitative feedback. This balance
+                                                is particularly crucial in the
+                                                retrospective meeting, so we’ll
+                                                guide you on how to use this data
+                                                with a retrospective lens.
+                                            </p>
+                                            <p>
+
+                                                As cycle time has become an
+                                                important indicator of team health
+                                                and development success, we’ve
+                                                released new capabilities within
+                                                Pluralsight Flow. This playbook will
+                                                dive deep into these so you’re
+                                                equipped to fully leverage Flow with
+                                                your team.
+                                            </p>
+                                            <p>
+                                                Ready to reduce that cycle time?
+                                                Let’s go.
+                                            </p>
+                                        </div>
+                                        <div id="prerequisites" class="playbook-section">
+                                            <h3>Prerequisites</h3>
+                                            <p><strong>KEY ASSUMPTIONS</strong></p>
+                                            <div class="playbook-icon-list">
+                                                <div class="playbook-icon-list-item">
+                                                    <div class="playbook-icon-list-icon">
+                                                        <img width="160" height="160" src="images/cycle-time.webp">
+                                                    </div>
+                                                    <div class="playbook-icon-list-copy">
+                                                        <p>You have shared understanding of cycle time across your team.</p>
+                                                        <div data-emptytext="Button" class="psbutton--left">
+                                                            <div>
+                                                                <a href="#" target="_self" style=" " class="button button--flow-gradient"
+                                                                    data-aa-title="learn-more-cycle-time">
+                                                                    Learn more
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="playbook-icon-list-item">
+                                                    <div class="playbook-icon-list-icon">
+                                                        <img width="160" height="160" src="images/reports.webp">
+                                                    </div>
+                                                    <div class="playbook-icon-list-copy">
+                                                        <p>Your Flow reports are set up and correctly configured.</p>
+                                                        <div data-emptytext="Button" class="psbutton--left">
+                                                            <div>
+                                                                <a href="#" target="_self" style=" " class="button button--flow-gradient"
+                                                                    data-aa-title="learn-more-cycle-time">
+                                                                    Learn more
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="playbook-icon-list-item">
+                                                    <div class="playbook-icon-list-icon">
+                                                        <img width="160" height="160" src="images/tests.webp">
+                                                    </div>
+                                                    <div class="playbook-icon-list-copy">
+                                                        <p>You’ve run some basic tests to validate the data within Flow.</p>
+                                                        <div data-emptytext="Button" class="psbutton--left">
+                                                            <div>
+                                                                <a href="#" target="_self" style=" " class="button button--flow-gradient 12 "
+                                                                    data-aa-title="learn-more-cycle-time">
+                                                                    Learn more
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p></p>
+                                            <p></p>
+                                        </div>
+                                        <div id="step1" class="playbook-section">
+                                            <div class="inline-hero">
+                                                <img src="images/step1.webp">
+                                            </div>
+                                            <strong>STEP 1</strong>
+                                            <h3>Prepare for the retrospective</h3>
+                                            <h4>Set expectations for the team</h4>
+                                            <p>
+                                                If you’ve been hosting retrospectives for a while, communicate before the next meeting if it’ll be longer than
+                                                usual. Start with an hour to include meaningful discussion around your data insights. Also, communicate that
+                                                you’ll be using Flow data if you haven’t done so before.
+                                            </p>
+                                            <h4>Preview the data</h4>
+                                            <p>
+                                                You’ll use Ticket Log and Retrospective for your analysis. Open these reports and double-check the following:
+                                                <ul>
+                                                    <li>
+                                                        Are all team members represented? If anyone recently joined the team, add their information in your User
+                                                        Merge and Team Management settings.
+                                                    </li>
+                                                    <li>
+                                                        Are there any outliers that don’t make sense? Avoid confusing distractions. If anything stands out,
+                                                        check your configurations for the reports to see if anything is out-of-date.
+                                                    </li>
+                                                    <li>
+                                                        Are there any noticeable areas in need of improvement? If the team doesn’t know where to start with the
+                                                        data, prepare conversation starters.
+                                                    </li>
+                                                </ul>
+                                            </p>
+                                            <p></p>
+                                            <p></p>
+                                        </div>
+                                        <div id="step2" class="playbook-section">
+                                            <div class="inline-hero">
+                                                <img src="images/step2.webp">
+                                            </div>
+                                            <strong>STEP 2</strong>
+                                            <h3>Set the tone</h3>
+                                            <p>
+                                                There are two principles you’ll need to establish as a team.
+                                            </p>
+                                            <div class="playbook-ordered-list">
+                                                <div class="playbook-ordered-list-item">
+                                                    <div>
+                                                        <img width="32" height="70" src="images/1.webp">
+                                                    </div>
+                                                    <div class="playbook-ordered-list-item-copy">
+                                                        <p>Data will allow us to advocate for and operate better as a team—it’s not for analyzing individual
+                                                            performance.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="playbook-ordered-list-item">
+                                                    <div>
+                                                        <img width="48" height="70" src="images/2.webp">
+                                                    </div>
+                                                    <div class="playbook-ordered-list-item-copy">
+                                                        <p>Data should augment the qualitative conversations in a retrospective, not replace them.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                It’s important that this conversation comes from a place of curiosity. You might have made your own conclusions
+                                                with Flow’s data, but listen to your team’s thoughts to see if they align.
+                                            </p>
+                                            <p>
+                                                We’ve found these two classic lines of conversation beat all others:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    What should we stop, start, and continue doing?
+                                                </li>
+                                                <li>
+                                                    What did we learn?
+                                                </li>
+                                            </ul>
+                                            <div class="playbook-callout-box">
+                                                <div class="box-header">
+                                                    <strong>QUICK FLOW TIP</strong>
+                                                </div>
+                                                <div class="box-content">
+                                                    <p>This conversation doesn’t need to feel like a dry, repetitive meeting. Here are some suggestions to add
+                                                        levity into your retrospective:
+                                                        <ul>
+                                                            <li>
+                                                                Have engineers take turns leading the meeting
+                                                            </li>
+                                                            <li>
+                                                                Start the meeting with an icebreaker, especially if there are new team members
+                                                            </li>
+                                                            <li>
+                                                                Include metaphors from your team’s favorite games, movies, or TV shows
+                                                            </li>
+                                                        </ul>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="step3" class="playbook-section">
+                                            <div class="inline-hero">
+                                                <img src="images/step3.webp">
+                                            </div>
+                                            <strong>STEP 3</strong>
+                                            <h3>Dive into the specifics</h3>
+                                            <p>
+                                                It's time for you and your team to dig into the data. For this analysis, you’ll find your team’s cycle time
+                                                hotspots and accelerators. Hotspots are areas that slow down your cycle time and accelerators speed it up.
+                                                They’re indicated by particularly slow and fast tickets, respectively.
+                                            </p>
+                                            <div class="inline-hero">
+                                                <img src="images/threelevels.webp">
+                                            </div>
+                                            <p>
+                                                There are three levels you’ll need to explore to find hotspots and accelerators:
+                                            </p>
+                                            <ol>
+                                                <li>
+                                                    A ticket analysis of your slowest and fastest tickets to find patterns of what’s repeatedly slowing down or
+                                                    speeding up your work
+                                                </li>
+                                                <li>
+                                                    A trend analysis across your data using Flow’s leading indicators
+                                                </li>
+                                                <li>
+                                                    A process analysis of your team’s culture of delivery, such as meetings, onboarding, maintenance, and
+                                                    reviews
+                                                </li>
+                                            </ol>
+                                            <div class="inline-img">
+                                                <img width="400" height="267" src="images/ticket-1.webp">
+                                            </div>
+                                            <h4 id="ticket-analysis">Ticket Analysis</h4>
+                                            <p>
+                                                Start with the ticket-by-ticket analysis by going to Ticket Log. Click on cycle time to sort your tickets by
+                                                longest cycle time. Set the time period to the last two weeks—these point to your recent hotspots. Ask
+
+                                                your team, “What happened here?” Remember to ask with curiosity, not blame. Then ask, “What actions should
+                                                we take to make sure cycle time isn’t that slow?”
+                                            </p>
+                                            <p>
+                                                Next, click cycle time again to re-sort the table and view the fastest tickets. Some of these tickets might be
+                                                basic maintenance (fast by nature). Ignore these and focus on cycle times that are less than a day—these are
+                                                your recent accelerators. Discuss with your team the root cause of the fast cycle times. Is that cause scalable
+                                                across other tickets?
+                                            </p>
+                                            <p>
+                                                Last, find common themes across tickets. For each ticket that suggested a hotspot or accelerator, talk with the
+                                                assignee to get their opinion on what happened. Be sure not to blame or overly credit the assignee; odds are the
+                                                cycle time was partly due to factors outside their control.
+
+                                            </p>
+                                            <h4>Trend Analysis</h4>
+                                            <p>
+                                                The next step is to look at trends across your team to see a bigger picture of how the overall team is doing.
+                                                You can do this by using the Retrospective report.
+                                            </p>
+                                            <img src="images/trends.webp">
+                                            <p>
+                                                The first row of insights on Retrospective is to help identify a baseline and track overall trends. Easily see
+                                                tickets completed, velocity (if you use story points), and, most importantly, median cycle time.
+                                            </p>
+                                            <p>
+                                                The second row is to determine the causes behind that baseline. Here’s how we use Retrospective to separate true
+                                                insights from the day-to-day noise.
+                                            </p>
+                                            <div class="inline-img">
+                                                <img width="400" height="267" src="images/queue.webp">
+                                            </div>
+                                            <p>
+                                                <strong>Median queue time</strong>
+                                                shows the amount of time a ticket spends in a waiting state. This important metric starts the conversation
+                                                around your processes. If your team takes a long time to review tickets or provide feedback, why is that? Are
+                                                they overwhelmed with other requests? Do they feel pressured to prioritize their own projects? Median queue time
+                                                will help you start these conversations.
+                                            </p>
+                                            <p>
+                                                Click on sources of queue time to figure out where your tickets spend the most time waiting and use that data to
+                                                refine overall feedback processes. Sometimes it’s as simple as recommitting the team to jump onto code reviews,
+                                                but it can also help you make the case for additional team members or support from other teams.
+                                            </p>
+                                            <div class="inline-img">
+                                                <img width="400" height="267" src="images/backflow.webp">
+                                            </div>
+                                            <p>
+                                                <strong>Backflow rate</strong> gives you insights into how often and why tickets move backward in the
+                                                development process.
+                                            </p>
+                                            <p>
+                                                This is an example of a Goldilocks metric: too high or too low can be
+
+                                                signs of issues in your workflow. What you should care about more is why tickets moved backwards. Use the
+                                                Sources of Backflow panel to determine that why.
+                                            </p>
+                                            <div class="playbook-callout-box">
+                                                <div class="box-header">
+                                                    <strong>COMMON SOURCES OF BACKFLOW</strong>
+                                                </div>
+                                                <div class="box-content">
+                                                    <p>
+                                                        <ul>
+                                                            <li>
+                                                                Robust code reviews are occurring, causing a ticket to revert to active development for
+                                                                refinement.
+                                                            </li>
+                                                            <li>
+                                                                Tickets are marked ready for development but lack articulate descriptions.
+                                                            </li>
+                                                            <li>
+                                                                Work is moving from active/review to UX and backlog due to indecision from leaders.
+                                                            </li>
+                                                        </ul>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p></p>
+                                            <p>
+                                                The key here is to use these insights to support better conversations, especially if you need other teams to
+                                                improve. Rather than saying your team needs more articulate tickets, show that ambiguous requests lead to hours
+                                                of wasted effort and longer-than-necessary cycle times.
+                                            </p>
+                                            <div class="inline-img">
+                                                <img width="400" height="267" src="images/jitter.webp">
+                                            </div>
+                                            <p>
+                                                <strong>Total jitter</strong>
+
+                                                looks at the activity behind each ticket. The significance of these sources of jitter depends on how your team
+                                                uses Jira or ADO. Learn how to configure Jitter here and prioritize Jitter insights based on what’s most
+                                                relevant to your team.
+                                            </p>
+                                            <p>
+                                                At a minimum, focus on these four sources of jitter:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <strong>Assignee change:</strong> Did your engineer feel too busy for this ticket? Or was another engineer
+                                                    more experienced in the ticket’s area? Either way, assignee changes can slow your cycle time.
+                                                </li>
+                                                <li>
+                                                    <strong>Robust comments by assignee:</strong> Comments from the assignee are a sign they don’t understand
+                                                    the ticket’s needs. This slows down cycle time because it requires a response from a product manager (PM),
+                                                    but it beats the alternative: an engineer creates the wrong thing.
+                                                </li>
+                                                <li>
+                                                    <strong>Robust comments by other participants:</strong> This might mean that a reviewer had to provide
+                                                    lengthy feedback on a ticket. Addressing that feedback will add cycle time.
+                                                </li>
+                                                <li>
+                                                    <strong>Description changed by assignee:</strong> This could be in response to a comment by an assignee, or
+                                                    a PM might change the requirements. If the assignee has already started working on the ticket, this results
+                                                    in wasted effort and increased cycle time.
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-control section
+                                recommended-section">
+                                <div class="container column-control-container">
+                                    <div class="row">
+                                        <div class="large-12 columns">
+                                            <hr>
+                                            <div
+                                                class="recommended-tile-heading">Recommended
+                                                articles</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="large-4 columns">
+                                            <h5>5 keys to successful
+                                                organizational design</h5>
+                                            <p>How do you create an organization
+                                                that is nimble, flexible and
+                                                takes a fresh view of team
+                                                structure? These are the keys to
+                                                creating and maintaining a
+                                                successful business that will
+                                                last the test of time.</p>
+                                            <a
+                                                href="https://www.https://www.pluralsight.com/resource-center/guides/organizational-design">Read
+                                                more</a>
+                                        </div>
+                                        <div class="large-4 columns">
+                                            <h5>Why your best tech talent quits</h5>
+                                            <p>Your best developers and IT pros
+                                                receive recruiting offers in
+                                                their InMail and inboxes daily.
+                                                Because the competition for the
+                                                top tech talent is so fierce,
+                                                how do you keep your best
+                                                employees in house?</p>
+                                            <a
+                                                href="https://www.https://www.pluralsight.com/resource-center/infographics/why-your-best-tech-talent-quits">Read
+                                                more</a>
+                                        </div>
+                                        <div class="large-4 columns">
+                                            <h5>Technology in 2025: Prepare your
+                                                workforce</h5>
+                                            <p>The key to surviving this new
+                                                industrial revolution is leading
+                                                it. That requires two key
+                                                elements of agile businesses:
+                                                awareness of disruptive
+                                                technology and a plan to develop
+                                                talent that can make the most of
+                                                it.</p>
+                                            <a
+                                                href="https://www.https://www.pluralsight.com/blog/career/tech-in-2025">Read
+                                                more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container column-control-container">
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <div class="subscribe-block">
+                                            <hr>
+                                            <p class="newsletter-link"><a
+                                                    href="https://www.https://www.pluralsight.com/subscribe">Subscribe
+                                                    to the newsletter</a></p>
+                                            <p class="back-link"><a
+                                                    href="/blog">Back to blog ›</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    jQuery(".text.section, .text-2.section, .text-3.section, .text-4.section, .title.section, .title2.section").each(function(key,item) {
+                        if (item.innerHTML.indexOf("\u2028") > -1){
+                            item.innerHTML = item.innerHTML.replace(/\u2028/g, ' ');
+                        }
+                    });
+                </script>
+                <script>
+                    function isElementInViewport (el) {
+                      var rect = el.getBoundingClientRect();
+                      return (
+                        rect.top >= 0 &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+                      );
+                    }
+                    function loadLazysrc(item){
+                      var $item = jQuery(item);
+                      if ($item.hasClass("lazy-bg")){
+                        $item.removeClass("lazy-bg");
+                      } else {
+                        var src = $item.attr('data-lazysrc');
+                        $item.attr('src',src);
+                        $item.removeAttr('data-lazysrc');
+                      }
+                    }
+                    
+                    //lazy load images above the fold
+                    jQuery('img[data-lazysrc],.lazy-bg').each(function(index,item){
+                      if ( jQuery(item).is(":visible") && isElementInViewport(item) ){
+                        loadLazysrc(item);
+                      } else if (document.URL.indexOf("lazyLoadOff=true") > -1){
+                        loadLazysrc(item);
+                      }
+                    });
+                    
+                    //lazy load images below the fold. Keep function available for promo service or others that may need it.
+                    window.addEventListener('load', function(){
+                      jQuery('img[data-lazysrc],.lazy-bg').each(function(index,item){
+                        loadLazysrc(item);
+                      });
+                    });
+                    </script>
+            </div>
+        </div>
+
+        <script type="text/javascript"
+            src="https://www.https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-uber.lc-51b9d9308cf1eb8e0b60ac17ced8feea-lc.min.js"
+            defer=""></script>
+        <link rel="stylesheet" href="ps-tt-commons.css" type="text/css">
+    </body>
+
+
+</html>

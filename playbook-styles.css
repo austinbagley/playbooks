@@ -1,0 +1,161 @@
+html {
+    scroll-behavior: smooth;
+}
+   
+.playbook-content {
+    margin-left: 272px;
+}
+
+.playbook-nav {
+    width: 272px;
+    height: 100%;
+    position: fixed;
+    color: white;
+    background-color: black;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding: 20px 10px 10px 40px;
+}
+
+.playbook-nav-logo {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+ 
+  /* Mobile*/
+  @media screen and (max-width: 768px) {
+    .playbook-nav { display: none; }
+    .playbook-content { margin-left: 0px; }
+  }
+
+hr.left-nav-line {
+    border-top: 1px solid rgb(57, 57, 57);
+    margin-right: 40px;
+}
+
+.playbook-table-of-contents a {
+    display: block;
+    margin: 10px 0;
+    color: white;
+
+}
+
+.playbook-table-of-contents a.indent {
+    padding-left: 30px;
+}
+
+
+
+.playbook-hero {
+    background-color: beige;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+    padding: 20px;
+}
+
+.playbook-title {
+    padding: 0px 40px 0px 0px;
+}
+
+.playbook-body {
+    padding: 20px 40px 0px 40px;
+}
+
+.playbook-section {
+    margin-top: 40px;
+}
+
+.inline-hero img {
+    margin: 10px 0;
+}
+
+.inline-img img {
+    float:right;
+    margin: 5px;
+}
+
+.callout-wrapper {
+    display: flex;
+  
+    padding-left:15%;
+    margin-bottom: 20px;
+}
+
+.callout-left {
+    width:6px;
+}
+
+.callout-right {
+    width:60%;
+    padding-left: 15px;
+}
+
+.playbook-icon-list-item {
+    display: flex;
+    padding: 10px 0;
+}
+
+.playbook-icon-list-copy {
+    width: 75%;
+    padding-left: 10px;
+    margin: auto ;
+}
+
+.playbook-icon-list-copy p {
+   font-size: 26px;
+}
+
+.playbook-ordered-list-item {
+    display: flex;
+    padding: 10px 0px 10px 30px;
+}
+
+.playbook-ordered-list-item-copy {
+    width: 75%;
+    padding-left: 0px;
+    margin: auto 20px;
+}
+
+.playbook-ordered-list-item-copy p {
+    font-size: 20px;
+}
+
+.playbook-callout-box {
+    display: block;
+    border: 1px solid rgb(39, 170, 225);
+}
+
+.playbook-callout-box .box-header {
+    background-image: linear-gradient(90deg, rgb(39, 170, 225) 0%, rgb(41, 104, 178) 100%); 
+    padding: 20px;
+    width:100%;
+    color:white;
+}
+
+.playbook-callout-box .box-header strong {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+.playbook-callout-box .box-content {
+    width:100%;
+    padding: 20px;
+}
+
+.gradient { 
+    transform: rotate(0deg); 
+    width: 5px; 
+    height: 80px; 
+    transform-origin: center center; 
+    opacity: 1; pointer-events: auto; 
+    cursor: inherit; border-width: 0px; 
+    background-color: transparent; 
+    background-image: linear-gradient(0deg, rgb(39, 170, 225) 0%, rgb(41, 104, 178) 100%); 
+    box-shadow: none; transition-property: none; 
+    /*z-index: 384;*/
+}
