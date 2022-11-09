@@ -1,21 +1,54 @@
+/* Page Settings */
+
 html {
     scroll-behavior: smooth;
 }
-   
-.playbook-content {
-    margin-left: 272px;
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -160px;
+    visibility: hidden;
 }
 
-.playbook-nav {
-    width: 272px;
-    height: 100%;
-    position: fixed;
-    color: white;
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    .playbook-nav { display: none; }
+  }
+
+  @media screen and (min-width: 768px) {
+    .playbook-main {
+        display: grid;
+        grid-template-columns: 272px minmax(10px, 1fr);
+        align-items: start;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .playbook-nav {
+        top: 66px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .playbook-nav {
+        top: 131px;
+    }
+}
+
+/* Main Layout */
+
+.playbook-main {
     background-color: black;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
+}
+
+/* Left Nav */
+
+.playbook-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    color: white;
     padding: 20px 10px 10px 40px;
 }
 
@@ -24,12 +57,6 @@ html {
     margin-bottom: 30px;
 }
  
-  /* Mobile*/
-  @media screen and (max-width: 768px) {
-    .playbook-nav { display: none; }
-    .playbook-content { margin-left: 0px; }
-  }
-
 hr.left-nav-line {
     border-top: 1px solid rgb(57, 57, 57);
     margin-right: 40px;
@@ -43,6 +70,12 @@ hr.left-nav-line {
 
 .playbook-table-of-contents a.indent {
     padding-left: 30px;
+}
+
+/* Content Area */ 
+
+.playbook-content {
+    background-color: white;
 }
 
 .playbook-hero {
