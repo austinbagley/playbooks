@@ -7,7 +7,7 @@ html {
 a.anchor {
     display: block;
     position: relative;
-    top: -160px;
+    top: -175px;
     visibility: hidden;
 }
 
@@ -40,7 +40,7 @@ a.anchor {
 /* Main Layout */
 
 .playbook-main {
-    background-color: black;
+    background-color: #130F25;
 }
 
 /* Left Nav */
@@ -76,6 +76,12 @@ hr.left-nav-line {
 
 .playbook-content {
     background-color: white;
+}
+
+.playbook-content h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'PS Commons Bold';
 }
 
 .playbook-hero {
@@ -124,7 +130,7 @@ hr.left-nav-line {
 
 .playbook-icon-list-copy {
     width: 75%;
-    padding-left: 10px;
+    padding-left: 0px;
     margin: auto ;
 }
 
@@ -145,6 +151,10 @@ hr.left-nav-line {
 
 .playbook-ordered-list-item-copy p {
     font-size: 20px;
+}
+
+.playbook-content ul li ul, .playbook-content ol li ol  {
+    padding-top: 10px;
 }
 
 /* Callouts and Blockquotes */
@@ -185,6 +195,7 @@ hr.left-nav-line {
     padding: 20px;
     width:100%;
     color:white;
+    text-align: center;
 }
 
 .playbook-callout-box .box-header strong {
@@ -196,4 +207,38 @@ hr.left-nav-line {
     width:100%;
     padding: 20px;
 }
+
+.playbook-callout-box .box-content-table {
+    padding: 0px;
+    margin: 0px;
+}
+
+.playbook-callout-box .box-content-table table {
+    margin: 0;
+    padding: 0;
+    border-style: hidden;
+    border-collapse: collapse;
+}
+
+
+.playbook-callout-box .box-content-table td {
+    border: 1px solid rgb(39, 170, 225);
+    text-align: center;
+    margin: 0;
+    padding: 15px 40px;
+    border-collapse: collapse;
+    font-size: large;
+}
+
+.playbook-callout-box .box-content-table th {
+    background-color: black;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 50%;
+}
+
 
