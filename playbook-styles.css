@@ -15,26 +15,30 @@ a.anchor {
 
 @media screen and (max-width: 768px) {
     .playbook-nav { display: none; }
+    .playbook-four-columns { flex-direction: column;}
   }
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .playbook-main {
         display: grid;
         grid-template-columns: 272px minmax(10px, 1fr);
         align-items: start;
     }
+    
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .playbook-nav {
         top: 66px;
     }
+    .playbook-four-columns { flex-direction: column;}
 }
 
 @media screen and (min-width: 1024px) {
     .playbook-nav {
         top: 131px;
     }
+    .playbook-four-columns { flex-direction: row;}
 }
 
 /* Main Layout */
@@ -74,6 +78,39 @@ hr.left-nav-line {
 
 /* Content Area */ 
 
+.video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+
+
+img.rounded-corner {
+    border-radius: 15px;
+}
+
+.playbook-four-columns {
+    display:flex;
+   
+    width: 100%;
+}
+
+.playbook-column {
+    border-radius: 20px;
+    flex: 1;
+    margin: 5px 2%;
+    background-color: #cfcfcf;
+    padding: 10px;
+}
+
+.playbook-column h4 {
+    font-family: "PS Commons Bold";
+    /*color: #4A33D0;*/
+    text-align: center;
+    background: linear-gradient(90deg, #4A33D0 4.1%, #27AAE1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .playbook-content {
     background-color: white;
 }
@@ -103,9 +140,10 @@ hr.left-nav-line {
 
 .playbook-section {
     margin-top: 40px;
+    width:100%;
 }
 
-.inline-hero {
+.inline-hero, .inline-hero-rounded {
     text-align: center;
 }
 
