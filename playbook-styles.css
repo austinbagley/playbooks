@@ -16,6 +16,7 @@ a.anchor {
 @media screen and (max-width: 768px) {
     .playbook-nav { display: none; }
     .playbook-four-columns { flex-direction: column;}
+    .playbook-two-buttons { flex-direction: column; }
   }
 
 @media screen and (min-width: 768px) {
@@ -32,6 +33,7 @@ a.anchor {
         top: 66px;
     }
     .playbook-four-columns { flex-direction: column;}
+    .playbook-two-buttons { flex-direction: column; }
 }
 
 @media screen and (min-width: 1024px) {
@@ -39,6 +41,7 @@ a.anchor {
         top: 131px;
     }
     .playbook-four-columns { flex-direction: row;}
+    .playbook-two-buttons { flex-direction: row; }
 }
 
 /* Main Layout */
@@ -113,6 +116,11 @@ img.rounded-corner {
 
 .playbook-content {
     background-color: white;
+    color:#000 !important;
+}
+
+.playbook-content p {
+    color: #000;
 }
 
 .playbook-content h5 {
@@ -181,6 +189,17 @@ img.rounded-corner {
     padding: 10px 0px 10px 30px;
 }
 
+.playbook-ordered-list-item-image {
+    width: 60px;
+    max-height: 70px;
+    text-align: center;
+}
+
+.playbook-ordered-list-item-image img {
+    height: 70px;
+
+}
+
 .playbook-ordered-list-item-copy {
     width: 75%;
     padding-left: 0px;
@@ -193,6 +212,19 @@ img.rounded-corner {
 
 .playbook-content ul li ul, .playbook-content ol li ol  {
     padding-top: 10px;
+}
+
+.playbook-two-buttons {
+    display: flex;
+}
+
+
+.playbook-two-buttons div {
+    padding: 0 20px;
+}
+
+.playbook-indent {
+    padding-left: 40px;
 }
 
 /* Callouts and Blockquotes */
@@ -226,6 +258,7 @@ img.rounded-corner {
 .playbook-callout-box {
     display: block;
     border: 1px solid rgb(39, 170, 225);
+    margin: 20px 0;
 }
 
 .playbook-callout-box .box-header {
