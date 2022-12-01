@@ -1,0 +1,94 @@
+.navigation .ps-navigation .ps-navigation-universal ul.ps-item>li.ps-nav-search.menu-link.open button:after {
+    background: unset;
+}
+.menu-dropdown .ps-nav-dropdown {
+  padding: 20px 0;
+}
+.menu-dropdown .ps-nav-dropdown ul li {
+  padding: 0;
+  margin: 0;
+}
+.menu-dropdown .ps-nav-dropdown ul li.nav-column-header .nav-title {
+  font-family: "PS Commons Bold";
+  margin-bottom: 3px;
+}
+.menu-dropdown .ps-nav-dropdown ul li.nav-column-item a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  padding: 10px 12px;
+  text-decoration: none;
+  background: linear-gradient( to left, transparent, transparent 50.03%, #f6f6f6 50%, #f6f6f6);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 0.15s ease-in;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.menu-dropdown .ps-nav-dropdown ul li.nav-column-item a:hover {
+  background-position: 0 0;
+  color: #D60056;
+}
+.menu-dropdown .ps-nav-dropdown ul li.nav-column-item span.nav-title-icon {
+  display: inline-block;
+  background: #EFEFEF;
+  border-radius: 3px;
+  box-shadow: inset 0px 0px 0px 2px rgba(236, 0, 140, 0);
+  transition: all 0.25s ease-in;
+  margin-right: 10px;
+}
+.menu-dropdown .ps-nav-dropdown ul li.nav-column-item span.nav-title-icon > img {
+  width: 28px;
+}
+.menu-dropdown .ps-nav-dropdown ul li.nav-column-item a:hover span.nav-title-icon {
+  box-shadow: inset 0px 0px 0px 2px rgba(236, 0, 140, 1);
+}
+.menu-dropdown .ps-nav-dropdown .nav-dropdown-link {
+  margin-top: auto;
+  padding: 20px 0 0;
+}
+.menu-dropdown .ps-nav-dropdown .nav-dropdown-link a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #D60056;
+  position: relative;
+  text-decoration: none;
+  padding: 0;
+}
+.menu-dropdown .ps-nav-dropdown .nav-dropdown-link a:after {
+  margin-left: 4px;
+  font-family: FontAwesome;
+  content: "\f105";
+  color: #D60056;
+  transition: .3s all;
+}
+.menu-dropdown .ps-nav-dropdown .nav-dropdown-link a:hover:after {
+  margin-left: 8px;
+}
+.menu-dropdown .ps-nav-dropdown .nav-title-arrow {
+  background: url(/content/dam/ps-nav-assets/arrow-pink.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transition: .3s all;
+  opacity: 0;
+  transform: translateY(-50%);
+}
+.menu-dropdown .ps-nav-dropdown ul>li>a:hover .nav-title-arrow {
+  opacity: 1;
+  right: 10px;
+}
+@media (min-width: 1025px) {
+  .menu-dropdown .ps-nav-dropdown {
+     padding: 50px;
+  }
+}

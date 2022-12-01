@@ -1,0 +1,161 @@
+img.rounded-corner {
+    border-radius: 10px;
+}
+
+.playbook-array {
+    margin-bottom: 30px;
+}
+
+.playbook-landing-hero {
+  
+    padding: 20px 0 20px 20px;
+}
+
+
+
+
+.hero-block-parent-wrapper {padding-left: 24px; padding-right: 24px;}
+
+.hero-block {max-width: 1340px; margin: 0 auto; padding: 10px;}
+
+.hero-block .title2 h1 {text-transform: none; font: normal normal 700 40px/48px 'PS Commons Bold'; color: #FFFFFF;}
+
+.hero-block .button {text-transform: none;}
+
+.dora-main-content-wrapper {padding: 48px 24px !important; color: #262626;}
+
+.dora-main-content-wrapper .accordion.section {border-bottom: 1px solid rgba(137, 164, 199, 0.5);}
+
+.dora-main-content-wrapper .accordion.section:first-child {border-top: 1px solid rgba(137, 164, 199, 0.5);}
+
+.dora-image-background-accent-block {background-repeat: no-repeat; background-position: top right 0%; background-size: 64% auto; background-color: #F4F7FA !important; background-image: url('block-background-accent-dots.png');}
+
+.dora-side-by-side-wrapper > .main > .content {display: block;}
+
+.dora-side-by-side-wrapper > .main > .content .generic-block.section {max-width: 100%; width: 100%;}
+
+.dora-side-by-side-wrapper > .main > .content > .generic-block.section:first-child {margin: 0 0 48px;}
+
+.dora-side-by-side-wrapper > .main > .content > .generic-block.section .dora-side-by-side-wrapper-inner h3 {margin: 0 0 24px; padding: 0; text-align: left; font: normal normal 700 32px/40px 'PS Commons Bold'; color: #262626;}
+
+.dora-side-by-side-wrapper > .main > .content > .generic-block.section .dora-side-by-side-wrapper-inner p {margin: 0; padding: 0; text-align: left; font: normal normal 400 16px/28px 'PS Commons'; color: #262626;}
+
+.dora-side-by-side-wrapper > .main > .content > .generic-block.section .dora-side-by-side-wrapper-inner img {max-width: 100%; width: 100%;}
+
+.accordion-left-subtitle h2 {margin: 0 auto 16px; font: normal normal 700 18px/24px 'PS Commons Bold'; color: #130F25 !important;}
+
+.accordion-left-title h3 {margin: 0 0 48px; font: normal normal 700 40px/48px 'PS Commons Bold'; color: #130F25 !important;}
+
+.block-max-width-restraint {margin: 0 auto; max-width: 1240px;}
+
+.block-eyebrow-text .text-4.text.section {margin: 0 auto;}
+
+.block-eyebrow-text p {margin: 0 auto 5px; font: normal normal 700 18px/24px 'PS Commons Bold'; color: #FF1675 !important; text-align: left;}
+
+.block-heading-text {margin: 0 !important;}
+
+.block-heading-text h2 {margin: 0 auto 24px !important; font: normal normal 700 40px/48px 'PS Commons Bold' !important; color: #130F25 !important; text-align: left !important;}
+
+.block-heading-text.-short h2 {margin: 0 auto 24px !important; }
+
+.block-body-text p {margin: 0 auto !important; text-align: left !important; font: normal normal 400 16px/28px 'PS Commons' !important; color: #262626 !important;}
+
+.dora-feature-card-section-wrapper {margin: 0 auto 67px;}
+
+.dora-custom-two-column-flex-wrapper > .main > .content {display: block;}
+
+.dora-feature-card-flex-wrapper > .main > .content {display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
+
+.dora-feature-card-flex-wrapper img {max-width: 100%; width: auto; max-height: 48px; height: auto; margin: 0 0 16px;}
+
+.dora-feature-card-flex-wrapper h3 {margin: 0 0 16px !important; font: normal normal 700 20px/32px 'PS Commons Bold'; color: #1A2737 !important; text-align: left;}
+
+.dora-feature-card-flex-wrapper .text-4 {margin: 0 !important;}
+
+.dora-feature-card-flex-wrapper .text-4 p {margin: 0 0 24px; font: normal normal 500 16px/28px 'PS Commons'; color: #3E5674 !important; text-align: left !important;}
+
+.show-on-desktop {display: none;}
+
+.no-column-borders .columns {border-color: #fff; padding: 0;}
+
+.vertically-align .columns {margin: auto 0;}
+
+body #content .hero-type-2-component .marketo-form-component input, body #content .hero-type-2-component .marketo-form-component textarea {background: #2A2753; background-color: #2A2753; appearance: none;}
+
+body #content .hero-type-2-component .marketo-form-component select {background: #2A2753; background-color: #2A2753; appearance: none; background-image: url("/content/dam/pluralsight2/product/flow/navigate/icon-select-arrow.png"); background-position: bottom 50% right 17px; background-repeat: no-repeat;}
+
+.dora-accordion-section {background-color: #F4F7FA; background-size: 100%;}
+
+.dora-accordion-section .main .content {display: block;}
+
+.dora-accordion-section .main .content .generic-block:first-child {max-width: 100%; width: 100%; margin: 0;}
+
+.dora-accordion-section .main .content .generic-block:nth-child(2) {max-width: 100%; width: 100%; margin: 0;}
+
+.dora-accordion-section-left .main .content {display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
+
+.dora-accordion-section-right .main .content {display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
+
+.dora-accordion-section .accordion.section .accordion-title {margin: 0; font: normal normal 700 20px/32px 'PS Commons Bold'; color: #130F25 !important;}
+
+.dora-accordion-section .accordion.section .accordion-content p {margin: 0; padding: 0; font: normal normal 500 16px/28px 'PS Commons'; color: #130F25 !important;}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+.dora-main-content-wrapper {padding: 120px 24px !important;}
+
+.dora-image-background-accent-block {background-size: 48% auto;}
+
+.dora-side-by-side-wrapper > .main > .content > .generic-block.section:first-child {margin: 0;}
+
+.text-left-mobile .columns.large-12 .title2 .title--left, .text-left-mobile .columns.large-12 .text-4 p{text-align: center !important;}
+
+.text-center-mobile .title2 .title--center, .text-center-mobile .text-4 p, .text-center-mobile .psbutton--center {text-align: left !important;}
+
+.block-eyebrow-text p {text-align: center;}
+
+.block-heading-text h2 {margin: 0 auto 64px !important; text-align: center !important;}
+
+.block-heading-text.-short h2 {margin: 0 auto 24px !important; }
+
+.block-body-text p {text-align: center !important;}
+
+.dora-feature-card-section-wrapper {margin: 0 auto 48px;}
+
+.dora-custom-two-column-flex-wrapper > .main > .content {display: flex; justify-content: flex-start; align-items: flex-start;}
+
+.dora-custom-two-column-flex-wrapper > .main > .content > .generic-block {max-width: 544px;}
+
+.dora-custom-two-column-flex-wrapper > .main > .content:first-child > .generic-block {margin: 0 88px 0 0;}
+
+.show-on-desktop {display: block;}
+
+.show-on-mobile {display: none;}
+
+.hero-block {padding: 50px;}
+
+.horizontal-rule {display: none;}
+
+.dora-side-by-side-wrapper > .main > .content {display: flex; justify-content: flex-start; align-items: center;}
+
+.dora-side-by-side-wrapper > .main > .content > .generic-block.section {max-width: 570px; width: 100%;}
+
+.dora-side-by-side-wrapper > .main > .content > .generic-block.section:first-child {margin: 0 100px 0 0;}
+
+.dora-accordion-section {background-size: 50%;}
+
+.dora-accordion-section .main .content {display: flex; justify-content: flex-start; align-items: flex-start;}
+
+.dora-accordion-section .main .content .generic-block:first-child {max-width: 390px; width: 100%; margin: 0 50px 0 0; margin-left: auto;}
+
+.dora-accordion-section .main .content .generic-block:nth-child(2) {max-width: 800px; width: 100%; margin-right: auto;}
+
+.accordion-left-title h3 {margin: 0;}
+} ;

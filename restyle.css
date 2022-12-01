@@ -1337,143 +1337,123 @@ body .cloned-nav-block .tc-gray {
 }
 @font-face {
     font-family: 'PS Commons';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_regular-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_regular-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_regular-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Bold';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_bold-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_bold-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_bold-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Italic';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_italic-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_italic-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_italic-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Black Italic';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_black_italic-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_black_italic-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_black_italic-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_black_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Black';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_black-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_black-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_black-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Bold Italic';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_bold_italic-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_bold_italic-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_bold_italic-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_bold_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Book Italic';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_book_italic-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_book_italic-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_book_italic-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_book_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Book';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_book-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_book-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_book-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_book-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Demibold Italic';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_demibold_italic-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_demibold_italic-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_demibold_italic-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_demibold_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Demibold';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_demibold-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_demibold-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_demibold-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_demibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Extra Bold Italic';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_extrabold_italic-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_extrabold_italic-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_extrabold_italic-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_extrabold_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Extra Bold';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_extrabold-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_extrabold-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_extrabold-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_extrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Extra Light Italic';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_extralight_italic-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_extralight_italic-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_extralight_italic-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_extralight_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Extra Light';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_extralight-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_extralight-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_extralight-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_extralight-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Light Italic';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_light_italic-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_light_italic-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_light_italic-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_light_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Light';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_light-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_light-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_light-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Medium Italic';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_medium_italic-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_medium_italic-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_medium_italic-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_medium_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Medium';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_medium-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_medium-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_medium-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Thin Italic';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_thin_italic-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_thin_italic-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_thin_italic-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_thin_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 @font-face {
     font-family: 'PS Commons Thin';
-    src: url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_thin-webfont.woff2') format('woff2'), url('../../../etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/fonts/tt-commons/ps_tt_commons_thin-webfont.woff') format('woff');
+    src: url('resources/ps_tt_commons_thin-webfont.woff2') format('woff2'), url('resources/ps_tt_commons_thin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 .column-layout {
     display: grid;

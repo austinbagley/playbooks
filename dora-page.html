@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="keywords" />
+        <meta name="description" />
+        <meta property="og:description" />
+        <meta name="twitter:description" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@pluralsight" />
+        <meta property="og:image"
+            content="https://www.pluralsight.com/content/dam/pluralsight-creative-team/creative_portfolio/dex_unified_website2022program/dex_unified_websitehomeandskills2022project/final/octoberHomepage-socialShareImage1.png"
+            />
+        <meta name="twitter:image"
+            content="https://www.pluralsight.com/content/dam/pluralsight-creative-team/creative_portfolio/dex_unified_website2022program/dex_unified_websitehomeandskills2022project/final/octoberHomepage-socialShareImage1.png"
+            />
+        <meta name="robots" content="index, follow" />
+        <meta name="content-type" content="Page" />
+        <meta name="categories" content="page" />
+        <meta name="cludo:category" content="page" />
+        <link rel="canonical" href="https://www.pluralsight.com/product/flow/features/dora" />
+        <script data-cfasync="false">window.wcmmodedisabled = true;</script>
+        <script data-cfasync="false">
+function getParameterByName(e,n){n||(n=window.location.href),e=e.replace(/[\[\]]/g,"\\$&");var o=new RegExp("[?&]"+e+"(=([^&#]*)|&|#|$)").exec(n);return o&&o[2]?decodeURIComponent(o[2].replace(/\+/g," ")):""}function changeHistoryQueryParam(e,n,o,t,a){if(history.pushState){var i=""==window.location.search?"?":window.location.search;if(-1!==decodeURIComponent(i).indexOf(e+"=")){var d=getParameterByName(e);if(t)if(o){var c=(p=d.split(",")).indexOf(n);if(c>-1&&p.splice(c,1),0===p.length){var r=new RegExp("&?"+e+"=[^&]*","g");i=i.replace(r,"")}else i=i.replace(e+"="+encodeURIComponent(d),e+"="+encodeURIComponent(p.join(",")))}else{var p=[];d?p=d.split(","):d="",-1===p.indexOf(n)&&(p.push(n),i=i.replace(e+"="+encodeURIComponent(d),e+"="+encodeURIComponent(p.join(","))))}else if(o){r=new RegExp("&?"+e+"=[^&]*","g");i=i.replace(r,"")}else i=i.replace(e+"="+encodeURIComponent(d),e+"="+encodeURIComponent(n))}else o||(i+="?"==i?e+"="+encodeURIComponent(n):"&"+e+"="+encodeURIComponent(n));var s=window.location.protocol+"//"+window.location.host+window.location.pathname+(a?decodeURIComponent(i):i);window.history.pushState({path:s},"",s)}}function dtmEventTrigger(e,n){var o=new CustomEvent(e,{bubbles:!0,cancelable:!1,detail:n});document.querySelector("body").dispatchEvent(o)}window.loadRemoteScript=function(e,n,o,t,a){var i=document.createElement("script");i.type=n||"text/javascript",i.id=t||null,1==o&&(i.async=o||1),i.readyState?i.onreadystatechange=function(){"loaded"!=i.readyState&&"complete"!=i.readyState||(i.onreadystatechange=null,a())}:i.onload=function(){a()},i.src=("https:"==document.location.protocol?"https://":"http://")+e,document.getElementsByTagName("head")[0].appendChild(i)};var doNotTrack=document.cookie.indexOf("ps_optout=1")>-1||document.URL.indexOf("dnt=true")>-1,oneHour=36e5,oneYear=24*oneHour*365,trkDate=new Date(Date.now()+oneHour);document.cookie="ps_trk="+(doNotTrack?"0":"1")+"; expires="+trkDate.toUTCString()+"; path=/"+(document.URL.indexOf("pluralsight.com")>-1?"; domain=pluralsight.com":"");var firstVisit=-1==document.cookie.indexOf("fv=");document.cookie="fv="+(firstVisit?"1":"0")+"; expires="+new Date(Date.now()+oneYear).toUTCString()+"; path=/"+(document.URL.indexOf("pluralsight.com")>-1?"; domain=pluralsight.com":""),window.dnbData={},document.cookie.indexOf("ps_trk=1")>-1&&"undefined"!=typeof dnbvid&&dnbvid.getData("api7831","json","T",function(e){window.dnbData=e,window.promoCheck&&!window.promoCheckRan&&window.promoCheck()}),document.addEventListener("at-content-rendering-succeeded",function(){window.targetFinished=!0},!1),document.addEventListener("at-content-rendering-failed",function(){window.targetFinished=!0},!1),document.addEventListener("at-content-rendering-no-offers",function(){window.targetFinished=!0},!1);
+</script>
+        <meta name="featureFlags" content="navigaterestyle" />
+        <script data-cfasync="false" src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/js/separates/jquery.min.js"></script>
+        <link rel="stylesheet" href="uber.css" type="text/css">
+        <link rel="stylesheet" href="restyle.css" type="text/css">
+        <link rel="stylesheet" href="ps-tt-commons.css" type="text/css" />
+        <link rel="stylesheet" href="nav-style.css" type="text/css" />
+        <link rel="stylesheet" href="landing-styles.css" type="text/css" />
+        <script data-cfasync="false">
+var appHost=("www-stage.pluralsight.com"==window.location.host||"www-dev.pluralsight.com"==window.location.host)?"https://app-stage.pluralsight.com":"https://app.pluralsight.com",pagePath=window.location.pathname,redirectPath="",appRedirectTag=document.head.querySelector("[name~='appRedirectPath'][content]");if(appRedirectTag&&(redirectPath=appRedirectTag.content.toString()),!window.is404){if(0==pagePath.indexOf("/product/channels")&&(redirectPath="/channels",document.URL.indexOf("cid=")>-1&&(redirectPath="/channels/details/"+getParameterByName("cid"))),pagePath.indexOf("/achievements")>-1&&"URLSearchParams"in window){var urlParams=new URLSearchParams(window.location.search),badgeID=urlParams.get("badge");redirectPath="/achievements/badges/"+badgeID}if(document.cookie.indexOf("www-status-production=")>-1&&-1==document.cookie.indexOf("midCheckout")&&("www.pluralsight.com"==window.location.host||"beta.www.pluralsight.com"==window.location.host)||document.cookie.indexOf("www-status-staging=")>-1&&-1==document.cookie.indexOf("midCheckout")&&("www-stage.pluralsight.com"==window.location.host||"beta.www-stage.pluralsight.com"==window.location.host)){var aidParam=getParameterByName("aid"),vidParam=getParameterByName("vid"),paramsString="";""!==aidParam&&(paramsString+=(paramsString.indexOf("?")>-1?"&":"?")+"aid="+aidParam),""!==vidParam&&(paramsString+=(paramsString.indexOf("?")>-1?"&":"?")+"vid="+vidParam),""!==redirectPath&&-1===document.URL.indexOf("show=home")?window.location=appHost+redirectPath+paramsString:jQuery(document).ready(function(){var a=appHost+"/id/dashboard",t=jQuery(".header_sign_up_link");t.text("My Dashboard"),t.attr("href",a),t.attr("title","My Dashboard"),jQuery(".header_sign_in_link").attr("style","display: none !important")})}else 0!=pagePath.indexOf("/customer/")||"www-stage.pluralsight.com"!=window.location.host&&"beta.www-stage.pluralsight.com"!=window.location.host&&"www.pluralsight.com"!=window.location.host&&"beta.www.pluralsight.com"!=window.location.host||-1!=document.cookie.indexOf("midCheckout")?""!=redirectPath?jQuery(document).ready(function(){jQuery(".sign_in_link").attr("href",appHost+"/id?redirectTo="+encodeURIComponent(redirectPath))}):jQuery(document).ready(function(){jQuery(".sign_in_link").attr("href",appHost+"/id?")}):window.location=appHost+"/id?redirectTo="+encodeURIComponent(document.URL)}
+</script>
+        <meta data-customer-type="no-type" />
+        <meta data-customer-type-ignore="false" />
+        <script data-cfasync="false">
+    document.cookie.indexOf("ps_si=")>-1&&(window.selectedInterest=document.cookie.split("ps_si=")[1].split(";")[0]),document.cookie.indexOf("ps_sct=")>-1&&(window.selectedConsumerType=document.cookie.split("ps_sct=")[1].split(";")[0]);var customerType,customerTypeTag=document.head.querySelector("meta[data-customer-type]").getAttribute("data-customer-type"),customerTypeIgnore=document.head.querySelector("meta[data-customer-type-ignore]").getAttribute("data-customer-type-ignore");customerTypeTag&&"true"!==customerTypeIgnore&&"string"==typeof customerTypeTag&&("pluralsight-customer-type:individual"===customerTypeTag?customerType="individual":"pluralsight-customer-type:business"===customerTypeTag&&(customerType="business"),customerType&&"pluralsight-customer-type:escape"!==customerTypeTag&&setSelectedConsumerType(customerType));function setSelectedInterest(e){var t=new Date;t.setTime(t.getTime()+6048e5),document.cookie="ps_si="+e+"; expires="+t.toUTCString()+"; path=/",window.selectedInterest=e}function setSelectedConsumerType(e){var t=new Date;t.setTime(t.getTime()+6048e5),document.cookie="ps_sct="+e+"; expires="+t.toUTCString()+"; path=/",window.selectedConsumerType=e}function setSelectedBusinessType(e){var t=new Date;t.setTime(t.getTime()+6048e5),document.cookie="ps_sbt="+e+"; expires="+t.toUTCString()+"; path=/",window.selectedBusinessType=e}if(document.URL.indexOf("b2c-price=true")>-1?setSelectedConsumerType("individual"):document.URL.indexOf("b2b-price=true")>-1&&setSelectedConsumerType("business"),document.cookie.indexOf("ps_sbt=")>-1&&(window.selectedBusinessType=document.cookie.split("ps_sbt=")[1].split(";")[0]),-1==document.cookie.indexOf("drift_ab")){var driftAbDate=new Date;driftAbDate.setTime(driftAbDate.getTime()+6048e5);var driftAb=0==Math.floor(2*Math.random())?"A":"B";document.cookie="drift_ab="+driftAb+"; expires="+driftAbDate.toUTCString()+"; path=/"}var inflDate=new Date;inflDate.setTime(inflDate.getTime()+18e5);var visNumDate=new Date;if(visNumDate.setTime(visNumDate.getTime()+31536e6),document.cookie.indexOf("ps_infl")>-1){var infl=document.cookie.split("ps_infl=")[1].split(";")[0];document.cookie="ps_infl="+infl+"; expires="+inflDate.toUTCString()+"; path=/"}else{var visNum=1;document.cookie.indexOf("ps_visNum")>-1&&(visNum=parseInt(document.cookie.split("ps_visNum=")[1].split(";")[0])+1),document.cookie="ps_visNum="+visNum+"; expires="+visNumDate.toUTCString()+"; path=/",getParameterByName("aid")||getParameterByName("vid")||""!=document.referrer&&-1==document.referrer.indexOf("pluralsight.com")?document.cookie="ps_infl=1; expires="+inflDate.toUTCString()+"; path=/":document.cookie="ps_infl=0; expires="+inflDate.toUTCString()+"; path=/"}!function(e,t,i,o){function n(){return t.getElementsByTagName("head")[0]}function s(e,i){if(e){var o=t.getElementById(i);o&&e.removeChild(o)}}if(window.location.hostname.endsWith("pluralsight.com")&&("/content/pluralsight/en.html"===window.location.pathname||"/"===window.location.pathname)){!function(e,i,o){if(e){var n=t.createElement("style");n.id=i,n.innerHTML=o,e.appendChild(n)}}(n(),"at-body-style","body {opacity: 0 !important}");const e=setTimeout(function(){s(n(),"at-body-style")},3e3);jQuery("html").on("at-content-rendering-succeeded at-content-rendering-failed",()=>{s(n(),"at-body-style"),clearTimeout(e)})}}(window,document);
+</script>
+        <script src="//assets.adobedtm.com/launch-EN123ab280156b405ca2abf6acf664d9a0.min.js" async></script>
+        <link rel="apple-touch-icon" sizes="57x57"
+            href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60"
+            href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72"
+            href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76"
+            href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114"
+            href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120"
+            href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144"
+            href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152"
+            href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180"
+            href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/favicon-32x32.png"
+            sizes="32x32">
+        <link rel="icon" type="image/png" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/android-chrome-192x192.png"
+            sizes="192x192">
+        <link rel="icon" type="image/png" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/favicon-96x96.png"
+            sizes="96x96">
+        <link rel="icon" type="image/png" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/favicon-16x16.png"
+            sizes="16x16">
+        <link rel="manifest" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/manifest.json">
+        <link rel="mask-icon" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/safari-pinned-tab.svg" color="#e71585">
+        <link rel="shortcut icon" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#e71585">
+        <meta name="msapplication-TileImage" content="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <title>DORA Metrics | Pluralsight Flow</title>
+        <meta property="og:title" content="DORA Metrics | Pluralsight Flow" />
+        <meta name="twitter:title" content="DORA Metrics | Pluralsight Flow" />
+    </head>
+    <body class="mode-disabled generic-template font-loading">
+        <div class="site-wrap">
+            <div class="nav-context ">
+                <div class="xf-page xfpage page basicpage">
+                    <div class="xf-content-height">
+                        <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+                            <div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+                                <div id="experiencefragment-4b43735519" class="cmp-experiencefragment cmp-experiencefragment--unified-shared-components">
+                                    <div class="xf-content-height">
+                                        <div class="root responsivegrid">
+                                            <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+                                                <div class="free-form-component aem-GridColumn aem-GridColumn--default--12">
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navigation aem-GridColumn aem-GridColumn--default--12">
+                                <header class="ps-navigation aem-component ">
+                                    <a id="skipContent" tabindex="0" href="#content" data-aa-title="PN-Skip To Content">Skip to content</a>
+                                    <nav class="ps-navigation-mega" aria-label="Primary product menu">
+                                        <div class="ps-navigation-container">
+                                            <a class="ps-nav-brand" href="/" aria-label="Pluralsight" data-aa-title="UN-Pluralsight Main"><img
+                                                    src="pluralsight-company-white-logo.png" alt="Pluralsight Logo" /></a>
+                                            <ul>
+                                                <li><a href="/" data-aa-title="UN-Pluralsight">Pluralsight</a></li>
+                                                <li><a href="/product/skills" data-aa-title="UN-Skills">Skills</a></li>
+                                                <li class="active"><a href="/product/flow" data-aa-title="UN-Flow">Flow</a></li>
+                                                <li><a href="/blog" data-aa-title="UN-Blog">Blog</a></li>
+                                                <li class="menu-link">
+                                                    <button role="button" type="button" class="menu-a" aria-label="Sign in" aria-expanded="false"
+                                                        data-aa-title="UN-Sign In">
+                                                        <img src="/content/dam/ps-nav-assets/nav-profile-image.svg" alt="Icon for profile image " />
+                                                        Sign in <span><i class="ps-nav-arrow"></i></span>
+                                                    </button>
+                                                    <div class="menu-dropdown-panel">
+                                                        <div class="menu-dropdown">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="https://app.pluralsight.com/id" data-aa-title="UN-Skills Sign In">
+                                                                        <p>Sign in to</p>
+                                                                        <div class="alt-image-w-arrow"><img
+                                                                                src="/content/dam/ps-nav-assets/product-logo/pluralsight-skills-black-logo.png"
+                                                                                alt="Sign in to Pluralsight Skills" width="135" /><span><i class="ps-nav-arrow"></i></span></div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://app.pluralsight.com/id?redirectTo=https%3a%2f%2fflow.pluralsight.com%2f"
+                                                                        data-aa-title="UN-Flow Sign In">
+                                                                        <p>Sign in to</p>
+                                                                        <div class="alt-image-w-arrow"><img
+                                                                                src="/content/dam/ps-nav-assets/product-logo/pluralsight-flow-black-logo.png"
+                                                                                alt="Sign in to Pluralsight Flow" width="117" /><span><i class="ps-nav-arrow"></i></span></div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                    <nav class="ps-navigation-universal " aria-label="Secondary product menu">
+                                        <div class="ps-navigation-container">
+                                            <div class="ps-nav-brand ">
+                                                <a href="/product/flow" aria-label="Pluralsight" data-aa-title="PN-Flow">
+                                                    <img src="pluralsight-flow-color-logo.svg" alt="Logo for Pluralsight Flow" />
+                                                </a>
+                                            </div>
+                                            <div class="ps-nav-mobile hide-for-large-up">
+                                                <button role="button" type="button" aria-label="Mobile hamburger menu" data-aa-title="PN-Mobile Hamburger">
+                                                    <i class="hamburger-line"></i>
+                                                    <i class="hamburger-line"></i>
+                                                    <i class="hamburger-line"></i>
+                                                </button>
+                                            </div>
+                                            <div class="ps-nav-menu">
+                                                <nav class="ps-navigation-mega mobile-only" aria-label="Primary mobile menu">
+                                                    <div class="ps-navigation-container">
+                                                        <a class="ps-nav-brand" href="/" aria-label="Pluralsight" data-aa-title="UN-Pluralsight Main Mobile"><img
+                                                                src="/content/dam/ps-nav-assets/pluralsight-company-black-logo.png" alt="Pluralsight Logo" /></a>
+                                                        <ul>
+                                                            <li class="menu-link">
+                                                                <a href="#" class="menu-a" aria-label="Sign in" aria-expanded="false"
+                                                                    data-accordion="mobileSignIn" data-aa-title="UN-Sign In Mobile">
+                                                                    Sign in <span><i class="ps-nav-arrow"></i></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="menu-link">
+                                                                <a href="#" class="menu-a" aria-label="Mobile Menu" aria-expanded="false"
+                                                                    data-accordion="mobileMenu" data-aa-title="UN-Menu Mobile">
+                                                                    Menu <span><i class="ps-nav-arrow"></i></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <div id="mobileSignIn" class="menu-dropdown-panel">
+                                                            <div class="menu-dropdown">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="https://app.pluralsight.com/id" data-aa-title="UN-Skills Sign In Mobile">
+                                                                            <span class="ps-nav-brand"><img
+                                                                                    src="/content/dam/ps-nav-assets/product-logo/pluralsight-skills-black-logo.png"
+                                                                                    alt="Sign in to Pluralsight Skills" /></span>
+                                                                            <p>Sign in to Skills <span><i class="ps-nav-arrow"></i></span></p>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a
+                                                                            href="https://app.pluralsight.com/id?redirectTo=https%3a%2f%2fflow.pluralsight.com%2f"
+                                                                            data-aa-title="UN-Flow Sign In Mobile">
+                                                                            <span class="ps-nav-brand"><img
+                                                                                    src="/content/dam/ps-nav-assets/product-logo/pluralsight-flow-black-logo.png"
+                                                                                    alt="Sign in to Pluralsight Flow" /></span>
+                                                                            <p>Sign in to Flow <span><i class="ps-nav-arrow"></i></span></p>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div id="mobileMenu" class="menu-dropdown-panel">
+                                                            <div class="menu-dropdown">
+                                                                <ul>
+                                                                    <li><a href="/" data-aa-title="UN-Pluralsight Mobile">Pluralsight <span><i
+                                                                                    class="ps-nav-arrow"></i></span></a></li>
+                                                                    <li><a href="/product/skills" data-aa-title="UN-Skills Mobile">Skills <span><i
+                                                                                    class="ps-nav-arrow"></i></span></a></li>
+                                                                    <li class="active"><a href="/product/flow" data-aa-title="UN-Flow Mobile">Flow <span><i
+                                                                                    class="ps-nav-arrow"></i></span></a></li>
+                                                                    <li><a href="/blog" data-aa-title="UN-Blog Mobile">Blog <span><i class="ps-nav-arrow"></i></span></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                                <ul class="ps-item ps-item-main">
+                                                    <li class="menu-link">
+                                                        <a href="/product/flow" data-aa-title="PN-Flow-Why Flow" class=" ">
+                                                            Why Flow?
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-link">
+                                                        <a href="/product/flow/features" data-aa-title="PN-Flow-Features" class=" ">
+                                                            Features
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-link">
+                                                        <a href="/product/flow/demo" data-aa-title="PN-Flow-Take a tour" class=" ">
+                                                            Take a tour
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-link">
+                                                        <a href="/pricing/flow" data-aa-title="PN-Flow-View plans" class=" ">
+                                                            View plans
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-link ps-nav-search">
+                                                        <button role="button" type="button" class="menu-a" data-aa-title="PN-Flow Search" aria-expanded="false">
+                                                            <svg viewBox="0 0 797 801" width="20" height="20" x="0px" y="0px">
+                                                                <path fill="white" stroke="white" stroke-width="40" class="st0"
+                                                                    d="M763.6,743.8L508.9,490c22.5-24.3,40-51.9,52.5-82.6s19-64.1,19.6-100c-2.4-77.3-29.2-141.2-80.3-191.7
+                                                                    S386.3,39,310.8,37.2c-79.7,1.8-145,28-195.8,78.5S37.9,230.1,36,307.4c2.4,77.3,29.2,141.2,80.3,191.7s114.4,76.7,189.9,78.5
+                                                                    c34.1-0.6,65.7-6.4,94.9-17.3c29.2-11,56-26.5,80.3-46.6l253.8,254.7L763.6,743.8z
+                                                                    M306.3,537.5c-65.1-1.8-119.3-24.3-162.5-67.6
+                                                                    S78,372.6,76.2,307.4c1.8-65.1,24.3-119.4,67.6-163s97.4-66.2,162.5-68c65.1,1.8,119.4,24.5,163,68s66.2,97.8,68,163
+                                                                    c-1.8,65.1-24.5,119.3-68,162.5S371.4,535.7,306.3,537.5z" />
+                                                                </svg>
+                                                            </button>
+                                                            <div class="menu-dropdown-panel">
+                                                                <div class="menu-dropdown"><div class="nav-search section">
+                                                                        <div id="header_tabs--search" class="nav-search-container nav-dropdown-container
+                                                                            header_tabs_content--container">
+                                                                            <div class="header_tabs_content--container">
+                                                                                <div class="header_nav--menu header_nav_search">
+                                                                                    <div class="header_search search-button__component">
+                                                                                        <form id="header_searchForm" class="header_search--form">
+                                                                                            <div class="closebutton"></div>
+                                                                                            <input type="text" name="q" class="header_search--input"
+                                                                                                placeholder="What do you want to learn?" autocomplete="off" />
+                                                                                            <svg viewBox="0 0 797 801" width="20" height="20" x="0px" y="0px">
+                                                                                                <path fill="white" stroke="white" stroke-width="40" class="st0"
+                                                                                                    d="M763.6,743.8L508.9,490c22.5-24.3,40-51.9,52.5-82.6s19-64.1,19.6-100c-2.4-77.3-29.2-141.2-80.3-191.7
+                                                                                                    S386.3,39,310.8,37.2c-79.7,1.8-145,28-195.8,78.5S37.9,230.1,36,307.4c2.4,77.3,29.2,141.2,80.3,191.7s114.4,76.7,189.9,78.5
+                                                                                                    c34.1-0.6,65.7-6.4,94.9-17.3c29.2-11,56-26.5,80.3-46.6l253.8,254.7L763.6,743.8z
+                                                                                                    M306.3,537.5c-65.1-1.8-119.3-24.3-162.5-67.6
+                                                                                                    S78,372.6,76.2,307.4c1.8-65.1,24.3-119.4,67.6-163s97.4-66.2,162.5-68c65.1,1.8,119.4,24.5,163,68s66.2,97.8,68,163
+                                                                                                    c-1.8,65.1-24.5,119.3-68,162.5S371.4,535.7,306.3,537.5z" />
+                                                                                                </svg>
+                                                                                            </form>
+                                                                                            <a href="/search" class="hidden header_search--url"></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div id="header-search-results-all" class="header_tabs_content--container
+                                                                                        nav-search-item">
+                                                                                        <div id="search-menu__results-dropdown" class="nav-search-result">
+                                                                                            <div id="header_dropdown--resultList"></div>
+                                                                                            <div id="header_dropdown--resultListCourses"></div>
+                                                                                        </div>
+                                                                                        <div class="nav-search-result paths">
+                                                                                            <div id="header_dropdown--resultListPaths"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <script id="header-search-categories-templates-partial"
+                                                                                type="text/x-handlebars-template">
+    {{#compare this.name '===' 'courses'}}
+    <ul class="header_dropdown--lists">
+        <li class="first li-list">{{{this.name}}}</li>
+        {{#each this.results}}
+            <li><a href="{{formatCourseURL this.courseName 'course'}}">{{{this.title}}}</a></li>
+        {{/each}}
+        <li class="last li-list"><a class="view-all-link" data-tab-param="{{mapResultSetNameToTabName this.name}}" data-categories="{{this.name}}">See more results</a></li>
+    </ul>
+    {{/compare}}
+</script>
+                                                                        </div></div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="ps-item ps-item-utility">
+                                                            <li class="menu-button">
+                                                                <a href="#flow-demo-modal" data-aa-title="PN-Flow-Contact sales" class="fancybox
+                                                                    button--gradient button">
+                                                                    Contact Sales
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                        </header>
+                                        <div class="header-padding"></div>
+                                        <div class="generic-modal section">
+                                            <div id="flow-demo-modal" class="main modal-wrapper clearfix ">
+                                                <div class="clearfix"><div class="generic-block section">
+                                                        <div id="flow-demo_" class="hidden"></div>
+                                                        <div class="generic-block-wrapper lazy-bg block block--custom-color block--left padding-top-zero
+                                                            padding-bottom-zero flow-demo clearfix" style="background: #1B1834;border-radius:16px;">
+                                                            <div class="main clearfix">
+                                                                <div class="content clearfix"><div class="column-control section">
+                                                                        <div class="container column-control-container">
+                                                                            <div class="row large">
+                                                                                <div class="columns customPadding large-12 small-12"><div class="title2
+                                                                                        section">
+                                                                                        <div data-emptytext="Title">
+                                                                                            <h1 id="contact_sales_h1" class=" mobile-font-size-6
+                                                                                                tablet-font-size-5 desk-font-size-4 title--left title--ultra ">
+                                                                                                Schedule a Demo
+                                                                                            </h1>
+                                                                                        </div></div>
+                                                                                    <div class="marketo-form section">
+                                                                                        <div class="marketo-form-component marketo-form--inline
+                                                                                            marketo-form--left clearfix">
+                                                                                            <div class="marketo-form-data hidden">
+                                                                                                <span class="form-preset"> </span>
+                                                                                                <span class="form-id">4603</span>
+                                                                                                <a class="redirect-path">Redirect Link</a>
+                                                                                                <span class="download-path"></span>
+                                                                                                <span class="success-message"><div class="contact-sales__title">Thank
+                                                                                                        you!</div>
+                                                                                                    <div class="contact-sales__subtitle"> Our team will be in
+                                                                                                        touch shortly. </div></span>
+                                                                                                <span class="marketo-wid"></span>
+                                                                                                <span class="marketo-biz-email"></span>
+                                                                                            </div>
+                                                                                            <form name="mkto_form" id="marketoForm_4603" class="marketo-target"><div
+                                                                                                    class="loading-message"><p class="loading-message-top">Loading
+                                                                                                        form...</p><p class="loading-message-bottom">If this
+                                                                                                        message remains, it may be due to cookies being disabled
+                                                                                                        or to an ad blocker.</p></div></form>
+                                                                                            <iframe id="marketo-file" style="display:none;"></iframe>
+                                                                                        </div>
+                                                                                        <script type="text/javascript" src="//cdn-0.d41.co/tags/ff-2.min.js"
+                                                                                            charset="utf-8"></script>
+                                                                                    </div>
+                                                                                    <div class="free-form-component section">
+                                                                                        <style>
+      .mode-edit .ps-navigation .generic-modal > .main#flow-demo-modal {display: none;}
+.flow-demo button:hover { background-color: #CC1671; }
+.flow-demo {padding: 40px !important; position: relative; box-sizing: border-box; }
+.flow-demo .marketo-form--inline .mktoForm {margin: 0 auto; font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;}
+.flow-demo .mktoForm label.mktoLabel {font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif; color: #ffffff !important;}
+.flow-demo .mktoField { font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif !important; background: #2A2753 !important; border: none !important; color: #fff !important; box-shadow: none !important;border-radius:8px;}
+.flow-demo .mktoHtmlText { font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif ; color: #ffffff !important;}
+.flow-demo .mktoHtmlText a { color: #E82A89; }
+.flow-demo .ps_pilot_close_btn { position:absolute; top: -30px; right: -30px; width: 25px; z-index: 9999; cursor: pointer; }
+.flow-demo .marketo-form-component {margin: 0 -30px;}
+.flow-demo .mktoForm .mktoButtonWrap.mktoSimple button.mktoButton {
+    border: none !important;
+    border-radius: 999px !important;
+    background: #E7005E !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-transform: unset;
+    transition: all .6s ease-in-out !important;
+}
+.flow-demo .mktoForm .mktoButtonWrap.mktoSimple button.mktoButton:hover {
+    background: #ff1675 !important;
+}
+.flow-demo .mktoForm .mktoButtonWrap.mktoSimple button.mktoButton:focus {
+    border:  2px solid rgba(255, 255, 255, 0.5) !important;
+}
+.marketo-form__success-message.form-2183 {padding: 60px 0;}
+.flow-demo__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Gotham A", "Gotham B", sans-serif;
+    color: white;
+}
+.flow-demo .title--white { font-size: 21px; font-weight: 500; color: #ccc; margin-bottom: 25px; }
+.flow-demo__subtitle {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+.fancybox-skin:has(.flow-demo) {
+    background: unset;
+}
+.fancybox-opened .fancybox-skin {
+    border-radius: 20px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .marketo-form__success-message.form-2183 {
+        padding: 100px 30px;
+    }
+    .flow-demo__title {
+        font-size: 90px;
+        line-height: 1.2;
+    }
+    .flow-demo__subtitle {font-size: 28px;}
+}
+@media only screen and (max-width: 1024px) {
+    #contact-sales {width: 100% !important;}
+    .flow-demo {max-height: 560px; overflow-y: auto; padding: 40px 20px !important;}
+    .flow-demo .marketo-form--inline .mktoForm .mktoFormRow {width: 100%; padding: 0;}
+    .flow-demo .marketo-form--inline .mktoButtonRow {margin: 0;}
+    .flow-demo .mktoForm .mktoFormCol {width: 100%;}
+    .flow-demo .mktoForm .mktoFieldWrap {width: 100%;}
+    .flow-demo .mktoForm input, .mktoForm select {width: 100% !important;}
+    .flow-demo .marketo-form--inline .mktoForm {max-width: unset; margin: 0;}
+    .flow-demo .marketo-form-component {margin: 0;}
+    .flow-demo .ps_pilot_close_btn {right: -10px;}
+}
+@media only screen and (max-width: 320px) {
+    .flow-demo .title2 h1 {margin-top: 40px;}
+    .flow-demo .ps_pilot_close_btn {right: -20px;top: 20px;}
+}
+  </style>
+                                                                                        <img
+                                                                                            src="/content/dam/pluralsight/images/target/new-home-marquee/close.png"
+                                                                                            class="ps_pilot_close_btn" alt="Close button" />
+                                                                                        <script type="text/javascript">
+    jQuery(document).on({
+  click:function(e){   
+    e.preventDefault(); 
+        jQuery('.fancybox-overlay').trigger("click");
+   }
+},'.ps_pilot_close_btn');
+
+document.getElementsByTagName('body')[0].addEventListener("ps.mktoFormSuccess", function(data){
+          var salesForm = data.detail.formID;
+          if(salesForm == '1015') {
+              document.getElementsByClassName('contact-sales')[0].style.backgroundColor='#E80A89'; 
+              document.getElementById('contact_sales_h1').style.display='none';
+          }
+});
+  </script>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <input type="hidden" name="modal-override-width" class="modal-override-width" />
+                                            </div></div>
+                                    </div>
+                                </div>
+                            </div></div>
+                        <div id="site-promo" style="display:none;">
+                            <div id="site-promo-content"></div>
+                            <div class="promo-close-button">&times;</div>
+                        </div>
+                       
+                      
+
+<!-- //////////////////////// START COPY HERE //////////////////////////// --> 
+
+                        <div id="content" role="main">
+                            <div class="contain">
+
+                                <!-- ///// HERO ///// -->
+                                <div class="generic-block section playbook-landing-hero-small">
+                                    <div id="hero-block-parent-wrapper_" class="hidden"></div>
+                                    <div class="generic-block-wrapper lazy-bg block block--custom-color block--left generic-block--auto padding-top-fifty
+                                        padding-bottom-hundred hero-block-parent-wrapper clearfix" style="background-image: linear-gradient(62.82deg, rgb(19,
+                                        70, 119) 2.45%, rgb(38, 31, 89) 103.65%) !important">
+                                        <div class="main clearfix">
+                                            <div class="content clearfix"><div class="generic-block section">
+                                                    <div id="hero-block vertically-align text-center-mobile_ block-left" class="hidden"></div>
+                                                    
+                                                        <div class="main clearfix">
+                                                            <div class="content clearfix"><div class="column-control section">
+                                                                    <div class="container column-control-container">
+                                                                        <div class="row large add-flex column-control--super-wide">
+                                                                            <div class="playbook-landing-hero"></div>
+                                                                                <div class="columns large-12 small-12"><div class="title2 section">
+                                                                                        <div data-emptytext="Title">
+                                                                                            <h1 class=" title--center " style="text-align: left; font-size: 48px; margin-top: 40px;">
+                                                                                                Welcome to Flow Academy
+                                                                                            </h1>
+                                                                                        </div></div>
+                                                                                    <div class="text-4 text section ">
+                                                                                        <div id="text-4-90dc94bff3" class="cmp-text">
+                                                                                            <p style="text-align: left;">Explore our library of playbooks and
+                                                                                                videos to learn how Flow can bolster your engineering efforts and
+                                                                                                processes.</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    
+                                                                                </div>
+                                                                               
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--- ////// COURSE LIST //////// -->
+                               
+                                <div class="generic-block section">
+                                    <div id=" vertically-align text-left-mobile dora-main-content-wrapper dora-image-background-accent-block_" class="hidden"></div>
+                                    <div class="generic-block-wrapper lazy-bg block block--transparent block--left generic-block--auto padding-top-zero
+                                        padding-bottom-zero vertically-align text-left-mobile dora-main-content-wrapper dora-image-background-accent-block
+                                        clearfix">
+                                        <div class="main clearfix">
+                                            <div class="content clearfix">
+                                                <div class="generic-block section">
+                                                    <div id="dora-feature-card-section-wrapper_" class="hidden"></div>
+                                                    <div class="generic-block-wrapper lazy-bg block block--transparent block--center generic-block--auto
+                                                        padding-top-zero padding-bottom-zero dora-feature-card-section-wrapper clearfix">
+                                                        <div class="main clearfix">
+                                                            <div class="content clearfix"><div class="generic-block section">
+                                                                    <div id="block-max-width-restraint_" class="hidden"></div>
+                                                                    <div class="generic-block-wrapper lazy-bg block block--transparent block--center
+                                                                        generic-block--auto padding-top-zero padding-bottom-zero block-max-width-restraint
+                                                                        clearfix">
+                                                                        <div class="main clearfix">
+                                                                            <div class="content clearfix"><div class="generic-block section">
+                                                                                    <div id="block-eyebrow-text_" class="hidden"></div>
+                                                                                    <div class="generic-block-wrapper lazy-bg block block--transparent
+                                                                                        block--center generic-block--auto padding-top-zero padding-bottom-zero
+                                                                                        block-eyebrow-text clearfix">
+                                                                                        <div class="main clearfix">
+                                                                                            <div class="content clearfix"><div class="text-4 text section">
+                                                                                                    <div id="text-4-83cf8d86b1" class="cmp-text">
+                                                                                                        <p>BE IN THE KNOW FOR FLOW</p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="generic-block section">
+                                                                                    <div id="block-heading-text_" class="hidden"></div>
+                                                                                    <div class="generic-block-wrapper lazy-bg block block--transparent
+                                                                                        block--center generic-block--auto padding-top-zero padding-bottom-zero
+                                                                                        block-heading-text clearfix">
+                                                                                        <div class="main clearfix">
+                                                                                            <div class="content clearfix"><div class="title2 section">
+                                                                                                    <div data-emptytext="Title">
+                                                                                                        <h2 class="title--black title--heavier ">
+                                                                                                            Want to make the most of Flow? You're in the right place. 
+                                                                                                        </h2>
+                                                                                                    </div></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                                                                                         
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="column-control section">
+                                                    <div class="container column-control-container">
+
+                                                        <!-- Three wide section-->
+                                                        <div class="row large add-flex column-control--super-wide">
+                                                            <div class="columns large-4 small-12"><div class="generic-block section playbook-array" style="height: 100%;">
+                                                                    <div id="course-card_" class="hidden"></div>
+                                                                    <div class="generic-block-wrapper block block--custom-color block--light block--left
+                                                                        generic-block--auto padding-top-zero padding-bottom-zero course-card clearfix"
+                                                                        style="background: rgb(255, 255, 255); border-radius: 16px; height: 100%;">
+                                                                        <div class="main clearfix">
+                                                                            <div class="content clearfix"><div class="column-control section">
+                                                                                    <div class="container column-control-container">
+                                                                                        <div class="row large fullwidth">
+                                                                                            <div class="columns customPadding large-12 small-12" style="padding: 15px !important;"><div class="image section">
+                                                                                                    <img
+                                                                                                        src="/content/dam/pluralsight2/product/flow/getting-started-thumb.png"
+                                                                                                        alt="getting started with Flow" style=" max-width: 100%;" class="image--center rounded-corner
+                                                                                                        ">
+                                                                                                </div>
+                                                                                                <div class="spacer section">
+                                                                                                    <div class="spacer " style="height:24px"></div>
+                                                                                                </div>
+                                                                                                <div class="title2 section">
+                                                                                                    <div data-emptytext="Title">
+                                                                                                        <h5 class=" desk-font-size-7 title--heavier ">
+                                                                                                            Getting started with Flow
+                                                                                                        </h5>
+                                                                                                    </div></div>
+                                                                                                
+                                                                                                    <div class="cmp-text">
+                                                                                                        <p>Flow provides a vast variety of insights and reports from day one. Make the most of each data point and build a positive Flow culture with this playbook.
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                               
+                                                                                               
+                                                                                                    <div id="text-4-dd8c8c7833" class="cmp-text">
+                                                                                                        <p>
+                                                                                                            <span class="course-duration">
+                                                                                                                <img src="/content/dam/pluralsight2/product/flow/clock-icon.png"  alt="estimated duration">
+                                                                                                                    1h 24m
+                                                                                                            </span> 
+                                                                                                            
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                
+                                                                                                <div class="link section">
+                                                                                                    <div>
+                                                                                                        <a href="https://www.pluralsight.com/product/flow/flow-academy/get-started-with-pluralsight-flow"
+                                                                                                            data-aa-title="flow-playbook-getting-started-with-flow"
+                                                                                                            class="simple_arrow pink " target="_self">
+                                                                                                            View playbook
+                                                                                                        </a>
+                                                                                                    </div></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="columns large-4 small-12"><div class="generic-block section playbook-array" style="height: 100%;">
+                                                                <div id="course-card_" class="hidden"></div>
+                                                                <div class="generic-block-wrapper block block--custom-color block--light block--left
+                                                                    generic-block--auto padding-top-zero padding-bottom-zero course-card clearfix"
+                                                                    style="background: rgb(255, 255, 255); border-radius: 16px; height: 100%;">
+                                                                    <div class="main clearfix">
+                                                                        <div class="content clearfix"><div class="column-control section">
+                                                                                <div class="container column-control-container">
+                                                                                    <div class="row large fullwidth">
+                                                                                        <div class="columns customPadding large-12 small-12" style="padding: 15px !important;"><div class="image section">
+                                                                                                <img
+                                                                                                    src="/content/dam/pluralsight2/product/flow/improve-cycle-time-thumb.png"
+                                                                                                    alt="improve cycle time with flow" style=" max-width: 100%;" class="image--center rounded-corner
+                                                                                                    ">
+                                                                                            </div>
+                                                                                            <div class="spacer section">
+                                                                                                <div class="spacer " style="height:24px"></div>
+                                                                                            </div>
+                                                                                            <div class="title2 section">
+                                                                                                <div data-emptytext="Title">
+                                                                                                    <h5 class=" desk-font-size-7 title--heavier ">
+                                                                                                        How to improve cycle time
+                                                                                                    </h5>
+                                                                                                </div></div>
+                                                                                            
+                                                                                                <div class="cmp-text">
+                                                                                                    <p>Moving faster is easier said than done. Use Flow and this playbook to quickly identify hotspots and accelerators and shift the throttle for your engineering processes.
+
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                           
+                                                                                           
+                                                                                                <div id="text-4-dd8c8c7833" class="cmp-text">
+                                                                                                    <p>
+                                                                                                        <span class="course-duration">
+                                                                                                            <img src="/content/dam/pluralsight2/product/flow/clock-icon.png"  alt="estimated duration">
+                                                                                                                1h 24m
+                                                                                                        </span> 
+                                                                                                        
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            
+                                                                                            <div class="link section">
+                                                                                                <div>
+                                                                                                    <a href="https://www.pluralsight.com/product/flow/flow-academy/how-to-improve-cycle-time"
+                                                                                                        data-aa-title="flow-playbook-improve-cycle-time"
+                                                                                                        class="simple_arrow pink " target="_self">
+                                                                                                        View playbook
+                                                                                                    </a>
+                                                                                                </div></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="columns large-4 small-12"><div class="generic-block section playbook-array" style="height: 100%;">
+                                                            <div id="course-card_" class="hidden"></div>
+                                                            <div class="generic-block-wrapper block block--custom-color block--light block--left
+                                                                generic-block--auto padding-top-zero padding-bottom-zero course-card clearfix"
+                                                                style="background: rgb(255, 255, 255); border-radius: 16px; height: 100%;">
+                                                                <div class="main clearfix">
+                                                                    <div class="content clearfix"><div class="column-control section">
+                                                                            <div class="container column-control-container">
+                                                                                <div class="row large fullwidth">
+                                                                                    <div class="columns customPadding large-12 small-12" style="padding: 15px !important;"><div class="image section">
+                                                                                            <img
+                                                                                                src="/content/dam/pluralsight2/product/flow/collaboration-thumb.png"
+                                                                                                alt="How to improve code review and collaboration " max-width: 100%;" class="image--center rounded-corner
+                                                                                                ">
+                                                                                        </div>
+                                                                                        <div class="spacer section">
+                                                                                            <div class="spacer " style="height:24px"></div>
+                                                                                        </div>
+                                                                                        <div class="title2 section">
+                                                                                            <div data-emptytext="Title">
+                                                                                                <h5 class=" desk-font-size-7 title--heavier ">
+                                                                                                    How to improve collaboration
+                                                                                                </h5>
+                                                                                            </div></div>
+                                                                                        
+                                                                                            <div class="cmp-text">
+                                                                                                <p>Effective collaboration brings many benefits: happier engineers, more secure and stable products, and faster delivery times. Learn how with this playbook.
+
+                                                                                                </p>
+                                                                                            </div>
+                                                                                       
+                                                                                       
+                                                                                            <div id="text-4-dd8c8c7833" class="cmp-text">
+                                                                                                <p>
+                                                                                                    <span class="course-duration">
+                                                                                                        <img src="/content/dam/pluralsight2/product/flow/clock-icon.png"  alt="estimated duration">
+                                                                                                            1h 24m
+                                                                                                    </span> 
+                                                                                                    
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        
+                                                                                        <div class="link section">
+                                                                                            <div>
+                                                                                                <a href="https://www.pluralsight.com/product/flow/flow-academy/improve-the-code-review-process-and-increase-collaboration-across-your-team"
+                                                                                                    data-aa-title="flow-playbook-improve-code-review-collab"
+                                                                                                    class="simple_arrow pink " target="_self">
+                                                                                                    View playbook
+                                                                                                </a>
+                                                                                            </div></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                </div>
+                                                            </div>
+                        
+                                                        </div>
+
+                                                        <!-- Three wide section-->
+                                                        <div class="row large add-flex column-control--super-wide">
+                                                            <div class="columns large-4 small-12"><div class="generic-block section playbook-array" style="height: 100%;">
+                                                                    <div id="course-card_" class="hidden"></div>
+                                                                    <div class="generic-block-wrapper block block--custom-color block--light block--left
+                                                                        generic-block--auto padding-top-zero padding-bottom-zero course-card clearfix"
+                                                                        style="background: rgb(255, 255, 255); border-radius: 16px; height: 100%;">
+                                                                        <div class="main clearfix">
+                                                                            <div class="content clearfix"><div class="column-control section">
+                                                                                    <div class="container column-control-container">
+                                                                                        <div class="row large fullwidth">
+                                                                                            <div class="columns customPadding large-12 small-12" style="padding: 15px !important;"><div class="image section">
+                                                                                                    <img
+                                                                                                        src="/content/dam/pluralsight2/product/flow/onboarding-thumb.png"
+                                                                                                        alt="improve ramp time with Flow" style=" max-width: 100%;" class="image--center rounded-corner
+                                                                                                        ">
+                                                                                                </div>
+                                                                                                <div class="spacer section">
+                                                                                                    <div class="spacer " style="height:24px"></div>
+                                                                                                </div>
+                                                                                                <div class="title2 section">
+                                                                                                    <div data-emptytext="Title">
+                                                                                                        <h5 class=" desk-font-size-7 title--heavier ">
+                                                                                                            Improve ramp times for new engineers
+                                                                                                        </h5>
+                                                                                                    </div></div>
+                                                                                                
+                                                                                                    <div class="cmp-text">
+                                                                                                        <p>Get your newbies up to speed on your culture, products, and codebase faster—and ease the overwhelming onboarding vibes—with this simple Flow guide.
+
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                               
+                                                                                               
+                                                                                                    <div id="text-4-dd8c8c7833" class="cmp-text">
+                                                                                                        <p>
+                                                                                                            <span class="course-duration">
+                                                                                                                <img src="/content/dam/pluralsight2/product/flow/clock-icon.png"  alt="estimated duration">
+                                                                                                                    1h 24m
+                                                                                                            </span> 
+                                                                                                            
+                                                                                                        </p>
+                                                                                                    </div>
+                                                                                                
+                                                                                                <div class="link section">
+                                                                                                    <div>
+                                                                                                        <a href="https://www.pluralsight.com/product/flow/flow-academy/how-to-improve-onboarding-and-decrease-your-software-engineer-ramp-time"
+                                                                                                            data-aa-title="flow-playbook-improve-ramp-time"
+                                                                                                            class="simple_arrow pink " target="_self">
+                                                                                                            View playbook
+                                                                                                        </a>
+                                                                                                    </div></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="columns large-4 small-12"><div class="generic-block section playbook-array" style="height: 100%;">
+                                                                <div id="course-card_" class="hidden"></div>
+                                                                <div class="generic-block-wrapper block block--custom-color block--light block--left
+                                                                    generic-block--auto padding-top-zero padding-bottom-zero course-card clearfix"
+                                                                    style="background: rgb(255, 255, 255); border-radius: 16px; height: 100%;">
+                                                                    <div class="main clearfix">
+                                                                        <div class="content clearfix"><div class="column-control section">
+                                                                                <div class="container column-control-container">
+                                                                                    <div class="row large fullwidth">
+                                                                                        <div class="columns customPadding large-12 small-12" style="padding: 15px !important;"><div class="image section">
+                                                                                                <img
+                                                                                                    src="/content/dam/pluralsight2/product/flow/sizzle-thumb.png"
+                                                                                                    alt="getting started with Flow" style=" max-width: 100%;" class="image--center rounded-corner
+                                                                                                    ">
+                                                                                            </div>
+                                                                                            <div class="spacer section">
+                                                                                                <div class="spacer " style="height:24px"></div>
+                                                                                            </div>
+                                                                                            <div class="title2 section">
+                                                                                                <div data-emptytext="Title">
+                                                                                                    <h5 class=" desk-font-size-7 title--heavier ">
+                                                                                                        How we use our delivery reports
+                                                                                                    </h5>
+                                                                                                </div></div>
+                                                                                            
+                                                                                                <div class="cmp-text">
+                                                                                                    <p>Hear how Team Sizzle used the Sprint Movement, Retrospective, and Ticket Log reports to optimize their processes and increase their fun.
+
+
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                           
+                                                                                           
+                                                                                                <div id="text-4-dd8c8c7833" class="cmp-text">
+                                                                                                    <p>
+                                                                                                        <span class="course-duration">
+                                                                                                            <img src="/content/dam/pluralsight2/product/flow/clock-icon.png"  alt="estimated duration">
+                                                                                                                1h 24m
+                                                                                                        </span> 
+                                                                                                        
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            
+                                                                                            <div class="link section">
+                                                                                                <div>
+                                                                                                    <a href="https://www.pluralsight.com/product/flow/flow-academy/how-flow-developers-use-our-delivery-reports-to-forecast-better"
+                                                                                                        data-aa-title="flow-playbook-sizzle-video-delivery-reports"
+                                                                                                        class="simple_arrow pink " target="_self">
+                                                                                                        View playbook
+                                                                                                    </a>
+                                                                                                </div></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- ///// REQUEST A DEMO ///// -->
+
+                                <div class="hero-type-2 section">
+                                    <div class="hero-type-2-component aem-component style-7">
+                                        <div class="flex-container">
+                                            <div class="flex first">
+                                                <p class="tagline pink"></p>
+                                                <h2 class="title">Let’s start talking about how Pluralsight Flow can help you</h2>
+                                                <p class="description">Whether you’re trying to accelerate delivery, improve your team’s collaboration and
+                                                    mentoring, or better see how leadership decisions impact your team’s processes, Flow is here to help. Our
+                                                    Flow experts can meet your individual needs and help you tailor Flow to your strategy.</p>
+                                                <div class="button-group">
+                                                </div>
+                                            </div>
+                                            <div class="flex second">
+                                                <div class="hero-2-marketo-form marketo-form">
+                                                    <div class="marketo-form-component marketo-form--stacked marketo-form--left clearfix">
+                                                        <p class="marketo-form--headerMessage">Let&#39;s chat!</p>
+                                                        <div class="marketo-form-data hidden">
+                                                            <span class="form-preset"> </span>
+                                                            <span class="form-id">1008</span>
+                                                            <a class="redirect-path">Redirect Link</a>
+                                                            <span class="download-path"></span>
+                                                            <span class="success-message">Form submitted successfully!</span>
+                                                            <span class="marketo-wid"></span>
+                                                            <span class="marketo-biz-email"></span>
+                                                        </div>
+                                                        <form name="mkto_form" id="marketoForm_1008" class="marketo-target"><div class="loading-message"><p
+                                                                    class="loading-message-top">Loading form...</p><p class="loading-message-bottom">If this
+                                                                    message remains, it may be due to cookies being disabled or to an ad blocker.</p></div></form>
+                                                        <iframe id="marketo-file" style="display:none;"></iframe>
+                                                    </div>
+                                                    <script type="text/javascript" src="//cdn-0.d41.co/tags/ff-2.min.js" charset="utf-8"></script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+
+<!-- //////////////////////// END COPY HERE //////////////////////////// --> 
+
+                       <!-- ////// FOOTER ///////// -->
+                        
+                        <div class="xf-page xfpage page basicpage">
+                            <div class="xf-content-height">
+                                <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+                                    <div class="footer-wrapper aem-GridColumn aem-GridColumn--default--12">
+                                        <div class="footer-wrapper aem-component" id="unified-footer-id">
+                                            <div class="footer-top-row">
+                                                <ul class="footer-column-list">
+                                                    <li class="footer-column">
+                                                        <div class="footer-column aem-component">
+                                                            <h2 class="footer-column-header">Support</h2>
+                                                            <ul class="parsys footer-column-parsys"><li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="/contact" class="footer-column-list-item-link" data-aa-title="tracking-contact"
+                                                                            target="_blank">Contact</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="https://help.pluralsight.com/help" class="footer-column-list-item-link"
+                                                                            data-aa-title="tracking-help" target="_blank">Help Center</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="https://help.pluralsight.com/help/ip-allowlist"
+                                                                            class="footer-column-list-item-link" data-aa-title="tracking-ip-allowlist"
+                                                                            target="_blank">IP Allowlist</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="https://www.pluralsight.com/sitemap.xml" class="footer-column-list-item-link"
+                                                                            data-aa-title="tracking-sitemap" target="_blank">Site Map</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="/product/downloads" class="footer-column-list-item-link"
+                                                                            data-aa-title="tracking-downloads" target="_blank">Download Pluralsight</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="/pricing/skills" class="footer-column-list-item-link"
+                                                                            data-aa-title="tracking-skills" target="_blank">Skills Plans</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="/pricing/flow" class="footer-column-list-item-link"
+                                                                            data-aa-title="tracking-flow-plans" target="_blank">Flow Plans</a>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="footer-column">
+                                                        <div class="footer-column aem-component">
+                                                            <h2 class="footer-column-header">Community</h2>
+                                                            <ul class="parsys footer-column-parsys"><li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="https://www.pluralsight.com/guides" class="footer-column-list-item-link"
+                                                                            data-aa-title="tracking-guides" target="_blank">Guides</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="/teach" class="footer-column-list-item-link" data-aa-title="tracking-teach"
+                                                                            target="_blank">Teach</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="/partners" class="footer-column-list-item-link"
+                                                                            data-aa-title="tracking-partner-with-pluralsight" target="_blank">Partner with
+                                                                            Pluralsight</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="/affiliate" class="footer-column-list-item-link"
+                                                                            data-aa-title="tracking-affiliate" target="_blank">Affiliate Partners</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="https://www.pluralsightone.org/" class="footer-column-list-item-link"
+                                                                            data-aa-title="tracking-pluralsight-one" target="_blank">Pluralsight One</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="/authors" class="footer-column-list-item-link" data-aa-title="tracking-authors"
+                                                                            target="_blank">Authors</a>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="footer-column">
+                                                        <div class="footer-column aem-component">
+                                                            <h2 class="footer-column-header">Company</h2>
+                                                            <ul class="parsys footer-column-parsys"><li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="/about" class="footer-column-list-item-link" data-aa-title="tracking-about"
+                                                                            target="_blank">About Us</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="/careers" class="footer-column-list-item-link" data-aa-title="tracking-careers"
+                                                                            target="_blank">Careers</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="/newsroom" class="footer-column-list-item-link"
+                                                                            data-aa-title="tracking-newsroom" target="_blank">Newsroom</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="/resource-center" class="footer-column-list-item-link"
+                                                                            data-aa-title="tracking-resources" target="_blank">Resources</a>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="footer-column">
+                                                        <div class="footer-column aem-component">
+                                                            <h2 class="footer-column-header">Industries</h2>
+                                                            <ul class="parsys footer-column-parsys"><li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="/industries/government" class="footer-column-list-item-link"
+                                                                            data-aa-title="tracking-public-sector" target="_blank">Public Sector</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="footer-column-list-item section">
+                                                                    <div class="footer-column-list-item aem-component">
+                                                                        <a href="https://www.pluralsightone.org/" class="footer-column-list-item-link"
+                                                                            data-aa-title="tracking-non-profit" target="_blank">Non-Profit</a>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="footer-form-section">
+                                                    <div class="footer-form">
+                                                        <h2 class="footer-form-header">
+                                                            Newsletter
+                                                        </h2>
+                                                        <div class="marketo-form-component marketo-form--stacked marketo-form--left clearfix">
+                                                            <p class="marketo-form--headerMessage">Sign up with your email to join our mailing list.</p>
+                                                            <div class="marketo-form-data hidden">
+                                                                <span class="form-preset"> </span>
+                                                                <span class="form-id">1229</span>
+                                                                <a class="redirect-path">Redirect Link</a>
+                                                                <span class="download-path"></span>
+                                                                <span class="success-message">Form Submitted Successfully!</span>
+                                                                <span class="marketo-wid"></span>
+                                                                <span class="marketo-biz-email"></span>
+                                                            </div>
+                                                            <form name="mkto_form" id="marketoForm_1229" class="marketo-target"><div class="loading-message"><p
+                                                                        class="loading-message-top">Loading form...</p><p class="loading-message-bottom">If this
+                                                                        message remains, it may be due to cookies being disabled or to an ad blocker.</p></div></form>
+                                                            <iframe id="marketo-file" style="display:none;"></iframe>
+                                                        </div>
+                                                        <script type="text/javascript" src="//cdn-0.d41.co/tags/ff-2.min.js" charset="utf-8"></script>
+                                                    </div>
+                                                    <ul class="footer-social-section">
+                                                        <li class="social-icon">
+                                                            <div class="social-icon aem-component">
+                                                                <a class="social-icon-link" href="https://www.facebook.com/pluralsight"
+                                                                    data-aa-title="tracking-footer-social-facebook" target="_blank">
+                                                                    <span class="social-icon-image-wrapper">
+                                                                        <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png"
+                                                                            data-lazysrc="/content/dam/social-icons/social-icon-fb-blue.webp" alt="Facebook Logo
+                                                                            Icon" style=" " class=" " />
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="social-icon">
+                                                            <div class="social-icon aem-component">
+                                                                <a class="social-icon-link" href="https://twitter.com/pluralsight"
+                                                                    data-aa-title="tracking-footer-social-twitter" target="_blank">
+                                                                    <span class="social-icon-image-wrapper">
+                                                                        <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png"
+                                                                            data-lazysrc="/content/dam/social-icons/social-icon-twitter-blue.webp" alt="Twitter
+                                                                            Logo Icon" style=" " class=" " />
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="social-icon">
+                                                            <div class="social-icon aem-component">
+                                                                <a class="social-icon-link" href="https://www.instagram.com/accounts/login/?next=/pluralsight/"
+                                                                    data-aa-title="tracking-footer-social-instagram" target="_blank">
+                                                                    <span class="social-icon-image-wrapper">
+                                                                        <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png"
+                                                                            data-lazysrc="/content/dam/social-icons/social-icon-instagram-blue.webp"
+                                                                            alt="Instagram Logo Icon" style=" " class=" " />
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="social-icon">
+                                                            <div class="social-icon aem-component">
+                                                                <a class="social-icon-link"
+                                                                    href="https://www.linkedin.com/company/pluralsight/mycompany/verification/"
+                                                                    data-aa-title="tracking-footer-social-linkedin" target="_blank">
+                                                                    <span class="social-icon-image-wrapper">
+                                                                        <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png"
+                                                                            data-lazysrc="/content/dam/social-icons/social-icon-linkedin-blue.webp"
+                                                                            alt="LinkedIn Logo Icon" style=" " class=" " />
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="social-icon">
+                                                            <div class="social-icon aem-component">
+                                                                <a class="social-icon-link" href="https://www.youtube.com/pluralsight"
+                                                                    data-aa-title="tracking-footer-social-youtube" target="_blank">
+                                                                    <span class="social-icon-image-wrapper">
+                                                                        <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png"
+                                                                            data-lazysrc="/content/dam/social-icons/social-icon-yt-blue.webp" alt="Youtube Logo
+                                                                            Icon" style=" " class=" " />
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="footer-bottom-row">
+                                                <a href="/" class="footer-copyright-link" data-aa-title="tracking-footer-logo" target="_blank">
+                                                    <span class="footer-copyright-icon-wrapper">
+                                                        <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png"
+                                                            data-lazysrc="/content/dam/logo/pluralsight-footer-logo-icon.png" alt="Pluralsight Logo" style=" "
+                                                            class=" " />
+                                                    </span>
+                                                    <span class="footer-copyright-link-text">
+                                                        Copyright © 2004 - 2022 Pluralsight LLC. All rights reserved
+                                                    </span>
+                                                </a>
+                                                <div class="footer-language-selector">
+                                                    <span class="footer-language-icon-wrapper">
+                                                    </span>
+                                                    <ul class="footer-language-link-list">
+                                                        <li class="footer-column-list-item">
+                                                            <div class="footer-column-list-item aem-component">
+                                                                <a class="footer-column-list-item-link"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="footer-column-list-item">
+                                                            <div class="footer-column-list-item aem-component">
+                                                                <a class="footer-column-list-item-link"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li class="footer-column-list-item">
+                                                            <div class="footer-column-list-item aem-component">
+                                                                <a class="footer-column-list-item-link"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <ul class="footer-policy-link-list">
+                                                    <li class="footer-column-list-item">
+                                                        <div class="footer-column-list-item aem-component">
+                                                            <a href="/terms" class="footer-column-list-item-link" data-aa-title="tracking-terms"
+                                                                target="_blank">Terms of Use</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="footer-column-list-item">
+                                                        <div class="footer-column-list-item aem-component">
+                                                            <a href="/privacy" class="footer-column-list-item-link" data-aa-title="tracking-privacy"
+                                                                target="_blank">Privacy Notice</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="footer-column-list-item">
+                                                        <div class="footer-column-list-item aem-component">
+                                                            <a
+                                                                href="/content/dam/pluralsight2/legal/Modern%20Slavery%20Act%20Transparency%20Statement%202020%20-%20Signed.pdf"
+                                                                class="footer-column-list-item-link" data-aa-title="tracking-code-of-conduct" target="_blank">Modern
+                                                                Slavery Act Transparency Statement</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div>
+                        <script>
+                            jQuery(".text.section, .text-2.section, .text-3.section, .text-4.section, .title.section, .title2.section").each(function(key,item) {
+                                if (item.innerHTML.indexOf("\u2028") > -1){
+                                    item.innerHTML = item.innerHTML.replace(/\u2028/g, ' ');
+                                }
+                            });
+                            </script>
+                        <script>
+                            function isElementInViewport (el) {
+                            var rect = el.getBoundingClientRect();
+                            return (
+                                rect.top >= 0 &&
+                                rect.left >= 0 &&
+                                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+                                rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+                            );
+                            }
+                            function loadLazysrc(item){
+                            var $item = jQuery(item);
+                            if ($item.hasClass("lazy-bg")){
+                                $item.removeClass("lazy-bg");
+                            } else {
+                                var src = $item.attr('data-lazysrc');
+                                $item.attr('src',src);
+                                $item.removeAttr('data-lazysrc');
+                            }
+                            }
+
+                            //lazy load images above the fold
+                            jQuery('img[data-lazysrc],.lazy-bg').each(function(index,item){
+                            if ( jQuery(item).is(":visible") && isElementInViewport(item) ){
+                                loadLazysrc(item);
+                            } else if (document.URL.indexOf("lazyLoadOff=true") > -1){
+                                loadLazysrc(item);
+                            }
+                            });
+
+                            //lazy load images below the fold. Keep function available for promo service or others that may need it.
+                            window.addEventListener('load', function(){
+                            jQuery('img[data-lazysrc],.lazy-bg').each(function(index,item){
+                                loadLazysrc(item);
+                            });
+                            });
+                        </script>
+                        <script type="text/javascript" src="/etc.clientlibs/pluralsight/clientlibs/clientlib-uber.lc-06e569ff4eb1b71f2558497f28d85121-lc.min.js"
+                            defer></script>
+
+                    </div>
+                </div>
+                
+                
+            </body>
+        </html>

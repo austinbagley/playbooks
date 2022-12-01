@@ -119,7 +119,8 @@ img.rounded-corner {
     color:#000 !important;
 }
 
-.playbook-content p {
+.playbook-content p, .playbook-content h1, .playbook-content h2, .playbook-content h3, .playbook-content h4, .playbook-content h5, .playbook-content h6, 
+.playbook-content li {
     color: #000;
 }
 
